@@ -13,7 +13,7 @@
             <children>
                 <ImageView fitHeight="221.0" fitWidth="220.0" layoutX="3.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../Image/PlantPal%20(1).png" />
+                        <Image url="@../../../Image/PlantPal (1).png" />
                     </image>
                 </ImageView>
                 <Label layoutX="7.0" layoutY="289.0" prefHeight="116.0" prefWidth="212.0" text="An interactive platform to remid you to take care of your plants and help nourish a healthy and green lifestyle" textAlignment="CENTER" wrapText="true">

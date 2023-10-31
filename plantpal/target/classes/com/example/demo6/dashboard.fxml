@@ -4,17 +4,25 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1230.0" style="-fx-background-color: #7ca76f;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.dashboardController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1542.0" style="-fx-background-color: #7ca76f;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.dashboardController">
     <children>
-        <AnchorPane prefHeight="680.0" prefWidth="230.0">
+        <AnchorPane prefHeight="790.0" prefWidth="258.0">
             <children>
-                <Button fx:id="userpro" layoutX="84.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#userproBtn" prefHeight="58.0" prefWidth="62.0" text="Zaima" />
-                <HBox alignment="CENTER" layoutY="217.0" prefHeight="58.0" prefWidth="230.0">
+                <Button layoutX="32.0" layoutY="23.0" mnemonicParsing="false" prefHeight="165.0" prefWidth="193.0" style="-fx-background-color: #7ca76f;">
+               <graphic>
+                  <ImageView fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Image/PlantPal%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+                <HBox alignment="CENTER" layoutY="215.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
                         <Button fx:id="myGarden" mnemonicParsing="false" onMouseClicked="#myGardenBtn" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="MY GARDEN" underline="true">
                             <font>
@@ -23,43 +31,43 @@
                         </Button>
                     </children>
                 </HBox>
-                <HBox alignment="CENTER" layoutY="275.0" prefHeight="58.0" prefWidth="230.0">
+                <HBox alignment="CENTER" layoutY="290.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="SELL PLANT" underline="true">
+                        <Button fx:id="sellplant" mnemonicParsing="false" onMouseClicked="#sellplantBtn" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="SELL PLANT" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
                         </Button>
                     </children>
                 </HBox>
-                <HBox alignment="CENTER" layoutY="333.0" prefHeight="58.0" prefWidth="230.0">
+                <HBox alignment="CENTER" layoutY="365.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="BUY PLANT" underline="true">
+                        <Button fx:id="buyplant" mnemonicParsing="false" onMouseClicked="#buyplantBtn" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="BUY PLANT" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
                         </Button>
                     </children>
                 </HBox>
-                <HBox alignment="CENTER" layoutY="391.0" prefHeight="58.0" prefWidth="230.0">
+                <HBox alignment="CENTER" layoutY="435.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="FERTILIZERS" underline="true">
+                        <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="FERTILIZERS" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
                         </Button>
                     </children>
                 </HBox>
-                <HBox alignment="CENTER" layoutY="449.0" prefHeight="58.0" prefWidth="230.0">
+                <HBox alignment="CENTER" layoutY="505.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="DISEASES" underline="true">
+                        <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="DISEASES" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
                         </Button>
                     </children>
                 </HBox>
-                <HBox alignment="CENTER" layoutY="507.0" prefHeight="58.0" prefWidth="230.0">
+                <HBox alignment="CENTER" layoutY="575.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
                         <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #7ca76f;" text="FORUM" underline="true">
                             <font>
@@ -68,90 +76,73 @@
                         </Button>
                     </children>
                 </HBox>
-                <Button fx:id="about" layoutX="64.0" layoutY="628.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" style="-fx-background-color: #7ca76f;" text="ABOUT US" underline="true">
+                <Button fx:id="about" layoutX="78.0" layoutY="738.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" style="-fx-background-color: #7ca76f;" text="ABOUT US" underline="true">
                     <font>
                         <Font size="17.0" />
                     </font>
                 </Button>
             </children></AnchorPane>
-        <AnchorPane layoutX="230.0" prefHeight="687.0" prefWidth="1000.0">
+        <AnchorPane layoutX="260.0" prefHeight="790.0" prefWidth="1282.0">
             <children>
-                <AnchorPane prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
+                <AnchorPane prefHeight="790.0" prefWidth="1282.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
                     <children>
-                        <TextField layoutX="44.0" layoutY="28.0" prefHeight="26.0" prefWidth="694.0" promptText="🔍   Search" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25; -fx-border-color: #795c32; -fx-border-radius: 25;">
+                        <TextField layoutX="44.0" layoutY="28.0" prefHeight="34.0" prefWidth="854.0" promptText="🔍   Search" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25; -fx-border-color: #795c32; -fx-border-radius: 25;">
                             <font>
                                 <Font size="15.0" />
                             </font>
                         </TextField>
-                        <AnchorPane layoutX="739.0" prefHeight="680.0" prefWidth="262.0">
+                        <AnchorPane layoutX="897.0" layoutY="72.0" prefHeight="728.0" prefWidth="336.0">
                             <children>
-                                <Button layoutX="117.0" layoutY="14.0" minWidth="53.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="54.0" style="-fx-background-color: #f8f7f2;">
-                                    <graphic>
-                                        <ImageView fitHeight="50.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <!--                                    <Image url="C:\Java Project\dashboard\src\imagee\userrr.png" />-->
-                                            </image>
-                                        </ImageView>
-                                    </graphic>
-                                </Button>
-                                <Button layoutX="178.0" layoutY="23.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: #f8f7f2;">
-                                    <graphic>
-                                        <ImageView fitHeight="30.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <!--                                    <Image url="C:\Java Project\dashboard\src\imagee\a76f.png" />-->
-                                            </image>
-                                        </ImageView>
-                                    </graphic></Button>
-                                <AnchorPane layoutX="17.0" layoutY="78.0" prefHeight="587.0" prefWidth="200.0" style="-fx-background-radius: 25; -fx-background-color: #fff4bf; -fx-border-width: 22;">
+                                <AnchorPane layoutX="17.0" layoutY="10.0" prefHeight="698.0" prefWidth="318.0" style="-fx-background-radius: 25; -fx-background-color: #fff4bf; -fx-border-width: 22;">
                                     <children>
-                                        <ImageView fitHeight="138.0" fitWidth="158.0" layoutX="49.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <!--                                    <Image url="C:\Java Project\dashboard\src\imagee\sun.png" />-->
-                                            </image>
-                                        </ImageView>
-                                        <ImageView fitHeight="138.0" fitWidth="151.0" layoutX="7.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <!--                                    <Image url="C:\Java Project\dashboard\src\imagee\water.png" />-->
-                                            </image>
-                                        </ImageView>
-                                        <ImageView fitHeight="138.0" fitWidth="137.0" layoutX="58.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <!--                                    <Image url="C:\Java Project\dashboard\src\imagee\fertilizer.png" />-->
-                                            </image>
-                                        </ImageView>
-                                        <Label layoutX="7.0" layoutY="131.0" prefHeight="58.0" prefWidth="121.0" text="Sunlight is essential for plant growth and flowering" textAlignment="CENTER" wrapText="true">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="12.0" />
-                                            </font>
-                                        </Label>
-                                        <Label layoutX="72.0" layoutY="235.0" prefHeight="58.0" prefWidth="121.0" text="Water is essential for plants to survive and thrive" textAlignment="CENTER" wrapText="true">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="12.0" />
-                                            </font>
-                                        </Label>
-                                        <Label layoutX="11.0" layoutY="406.0" prefHeight="58.0" prefWidth="121.0" text="Fertilizers provide plants with necessary nutrients" textAlignment="CENTER" wrapText="true">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="12.0" />
-                                            </font>
-                                        </Label>
+                              <ImageView fitHeight="159.0" fitWidth="182.0" layoutX="109.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Image/sun.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="159.0" fitWidth="174.0" layoutX="22.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Image/water.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="159.0" fitWidth="154.0" layoutX="138.0" layoutY="474.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Image/fertilizer.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="29.0" layoutY="172.0" prefHeight="71.0" prefWidth="134.0" text="Sunlight is essential for plant growth and flowering" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="168.0" layoutY="292.0" prefHeight="71.0" prefWidth="122.0" text="Water is essential for plants to survive and thrive" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="29.0" layoutY="582.0" prefHeight="71.0" prefWidth="134.0" text="Fertilizers provide plants with necessary nutrients" textAlignment="CENTER" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="14.0" />
+                                 </font>
+                              </Label>
                                     </children>
                                 </AnchorPane>
                             </children></AnchorPane>
-                        <AnchorPane layoutX="44.0" layoutY="77.0" prefHeight="137.0" prefWidth="694.0" style="-fx-background-color: #fbdbc0; -fx-background-radius: 20;">
+                        <AnchorPane layoutX="44.0" layoutY="77.0" prefHeight="159.0" prefWidth="854.0" style="-fx-background-color: #fbdbc0; -fx-background-radius: 20;">
                             <children>
-                                <ImageView fitHeight="138.0" fitWidth="102.0" layoutX="578.0">
-                                    <image>
-                                        <!--                              <Image url="C:\Java Project\dashboard\src\imagee\Untitled design (6).png" />-->
-                                    </image>
-                                </ImageView>
-                                <Label alignment="CENTER" contentDisplay="CENTER" layoutY="18.0" prefHeight="102.0" prefWidth="578.0" text="Embrace the day with a green thumb and a heart full of care. Let's nurture your plants and your day together." textAlignment="CENTER" wrapText="true">
+                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="28.0" prefHeight="102.0" prefWidth="578.0" text="Embrace the day with a green thumb and a heart full of care. Let's nurture your plants and your day together." textAlignment="CENTER" wrapText="true">
                                     <font>
-                                        <Font name="Comic Sans MS" size="19.0" />
+                                        <Font name="Comic Sans MS" size="20.0" />
                                     </font>
                                 </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="660.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/fancymohila.png" />
+                           </image>
+                        </ImageView>
                             </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="97.0" layoutY="229.0" prefHeight="200.0" prefWidth="262.0" style="-fx-background-color: #fffcec; -fx-background-radius: 20;">
+                        <AnchorPane layoutX="97.0" layoutY="290.0" prefHeight="200.0" prefWidth="262.0" style="-fx-background-color: #fffcec; -fx-background-radius: 20;">
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="208.0" layoutX="27.0" layoutY="8.0">
                                     <image>
@@ -166,7 +157,7 @@
                                 <ProgressBar layoutX="114.0" layoutY="168.0" prefHeight="20.0" prefWidth="133.0" progress="0.0" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="97.0" layoutY="450.0" prefHeight="200.0" prefWidth="262.0" style="-fx-background-color: #fffcec; -fx-background-radius: 20;">
+                        <AnchorPane layoutX="97.0" layoutY="535.0" prefHeight="200.0" prefWidth="262.0" style="-fx-background-color: #fffcec; -fx-background-radius: 20;">
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="208.0" layoutX="29.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -180,7 +171,7 @@
                                 <ProgressBar layoutX="114.0" layoutY="168.0" prefHeight="20.0" prefWidth="133.0" progress="0.0" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="425.0" layoutY="229.0" prefHeight="200.0" prefWidth="262.0" style="-fx-background-color: #fffcec; -fx-background-radius: 20;">
+                        <AnchorPane layoutX="500.0" layoutY="290.0" prefHeight="200.0" prefWidth="262.0" style="-fx-background-color: #fffcec; -fx-background-radius: 20;">
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="208.0" layoutX="32.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -195,7 +186,7 @@
                                 <ProgressBar layoutX="114.0" layoutY="168.0" prefHeight="20.0" prefWidth="133.0" progress="0.0" />
                             </children>
                         </AnchorPane>
-                        <AnchorPane layoutX="425.0" layoutY="440.0" prefHeight="200.0" prefWidth="262.0" style="-fx-background-color: #fffcec; -fx-background-radius: 20;">
+                        <AnchorPane layoutX="500.0" layoutY="535.0" prefHeight="200.0" prefWidth="262.0" style="-fx-background-color: #fffcec; -fx-background-radius: 20;">
                             <children>
                                 <ImageView fitHeight="150.0" fitWidth="230.0" layoutX="18.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -209,6 +200,20 @@
                                 <ProgressBar layoutX="114.0" layoutY="168.0" prefHeight="20.0" prefWidth="133.0" progress="0.0" />
                             </children>
                         </AnchorPane>
+                  <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="userpro" layoutX="1126.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#userproBtn" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #f8f7f2;">
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/userrr.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                     </children></AnchorPane>
             </children>
         </AnchorPane>

@@ -9,14 +9,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.buyplantController">
     <children>
         <AnchorPane prefHeight="790.0" prefWidth="1540.0" style="-fx-background-color: #7ca76f;">
             <children>
                 <AnchorPane prefHeight="790.0" prefWidth="258.0">
                     <children>
-                        <Button layoutX="31.0" layoutY="36.0" mnemonicParsing="false" prefHeight="165.0" prefWidth="193.0" style="-fx-background-color: #7ca76f;">
+                        <Button fx:id="logo" layoutX="32.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#logoBtn" prefHeight="165.0" prefWidth="193.0" style="-fx-background-color: #7ca76f;">
                             <graphic>
                                 <ImageView fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -89,7 +88,7 @@
                         </Button>
                     </children>
                 </AnchorPane>
-                <AnchorPane layoutX="258.0" prefHeight="790.0" prefWidth="1282.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
+                <AnchorPane layoutX="257.0" prefHeight="790.0" prefWidth="1336.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
                     <children>
                         <TextField layoutX="79.0" layoutY="28.0" prefHeight="38.0" prefWidth="810.0" promptText="🔍   Search" style="-fx-background-color: #f8f7f2; -fx-background-radius: 20; -fx-border-color: #795c32; -fx-border-radius: 20;" />
                         <Button layoutX="1126.0" layoutY="21.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #f8f7f2;">
@@ -112,4 +111,3 @@
         </AnchorPane>
     </children>
 </AnchorPane>
-
