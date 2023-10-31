@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff4eb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.resetpassController">
+    <children>
+        <PasswordField layoutX="178.0" layoutY="130.0" prefHeight="34.0" prefWidth="220.0" />
+        <PasswordField layoutX="178.0" layoutY="214.0" prefHeight="34.0" prefWidth="220.0" />
+        <Label layoutX="184.0" layoutY="110.0" text="NEW PASSWORD" textFill="#6e3b3b">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="184.0" layoutY="190.0" text="CONFIRM NEW PASSWORD" textFill="#6e3b3b">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="done" layoutX="258.0" layoutY="263.0" mnemonicParsing="false" onMouseClicked="#doneBtn" style="-fx-background-color: #b67f56;" text="DONE" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="404.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Image/confused.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
