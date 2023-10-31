@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff4eb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.signsuccessController">
+    <children>
+        <ImageView fitHeight="204.0" fitWidth="204.0" layoutX="198.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Image/shadalogo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="177.0" layoutY="189.0" text="Signed Up Successfully!!">
+            <font>
+                <Font name="Comic Sans MS Bold" size="21.0" />
+            </font>
+        </Label>
+        <Label layoutX="145.0" layoutY="251.0" prefHeight="82.0" prefWidth="309.0" text="Welcome to PlantPal family, where we help taking care of your plants and create a green community." textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="ok" layoutX="264.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#successBtn" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #b67f56;" text="OK" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
