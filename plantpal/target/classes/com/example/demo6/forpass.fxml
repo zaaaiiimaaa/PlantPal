@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.forgotpassController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.forgotpassContoller">
     <children>
         <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff4eb;">
             <children>
@@ -17,7 +17,7 @@
                         <Font name="Comic Sans MS" size="15.0" />
                     </font>
                 </Label>
-                <TextField layoutX="109.0" layoutY="261.0" prefHeight="36.0" prefWidth="198.0" style="-fx-background-color: #fff4eb; -fx-border-color: #865e43; -fx-border-radius: 20; -fx-background-radius: 20;">
+                <TextField fx:id="otpfield" layoutX="109.0" layoutY="261.0" prefHeight="36.0" prefWidth="198.0" style="-fx-background-color: #fff4eb; -fx-border-color: #865e43; -fx-border-radius: 20; -fx-background-radius: 20;">
                     <font>
                         <Font size="14.0" />
                     </font>
@@ -42,7 +42,7 @@
                         <Image url="@../../../Image/ded.png" />
                     </image>
                 </ImageView>
-                <Button fx:id="ok" layoutX="346.0" layoutY="264.0" mnemonicParsing="false" onMouseClicked="#okBtn" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #b67f56;" text="CONFIRM" textFill="#fffefe">
+                <Button fx:id="ok" layoutX="346.0" layoutY="264.0" mnemonicParsing="false" onAction="#matchOTP" onMouseClicked="#okBtn" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #b67f56;" text="CONFIRM" textFill="#fffefe">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
@@ -52,12 +52,12 @@
                         <Font name="System Bold" size="11.0" />
                     </font>
                 </Label>
-            <TextField layoutX="109.0" layoutY="166.0" prefHeight="36.0" prefWidth="198.0" style="-fx-background-color: #fff4eb; -fx-border-color: #865e43; -fx-border-radius: 20; -fx-background-radius: 20;">
+            <TextField fx:id="usernamefield" layoutX="109.0" layoutY="166.0" prefHeight="36.0" prefWidth="198.0" style="-fx-background-color: #fff4eb; -fx-border-color: #865e43; -fx-border-radius: 20; -fx-background-radius: 20;">
                <font>
                   <Font size="14.0" />
                </font>
             </TextField>
-            <Button layoutX="346.0" layoutY="169.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #b67f56;" text="SEND OTP" textFill="#fffefe">
+            <Button layoutX="346.0" layoutY="169.0" mnemonicParsing="false" onAction="#sendotpbutton" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #b67f56;" text="SEND OTP" textFill="#fffefe">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
