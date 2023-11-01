@@ -31,9 +31,9 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="Done" layoutX="262.0" layoutY="313.0" mnemonicParsing="false" onAction="#resetPassword" style="-fx-background-color: #b67f56;" text="Done" textFill="#fbfbfb" />
-      <TextField fx:id="Reuser" layoutX="180.0" layoutY="99.0" prefHeight="34.0" prefWidth="214.0" />
-      <TextField fx:id="NewPasswordField" layoutX="210.0" layoutY="175.0" />
-      <TextField fx:id="pp" layoutX="202.0" layoutY="250.0" />
+      <Button fx:id="Done" layoutX="262.0" layoutY="312.0" mnemonicParsing="false" onAction="#resetPassword" style="-fx-background-color: #b67f56;" text="Done" textFill="#fbfbfb" />
+      <TextField fx:id="Reuser" layoutX="177.0" layoutY="101.0" prefHeight="34.0" prefWidth="214.0" />
+      <TextField fx:id="NewPasswordField" layoutX="177.0" layoutY="176.0" prefHeight="34.0" prefWidth="214.0" />
+      <TextField fx:id="pp" layoutX="177.0" layoutY="250.0" prefHeight="34.0" prefWidth="214.0" />
     </children>
 </AnchorPane>
