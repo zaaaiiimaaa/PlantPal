@@ -42,8 +42,8 @@
                         <!--                  <Image url="@/Image/Untitled design (8)hehe.png" />-->
                     </image>
                 </ImageView>
-                <TextField layoutX="147.0" layoutY="207.0" promptText="Username" />
-                <PasswordField layoutX="147.0" layoutY="250.0" promptText="Password" />
+                <TextField fx:id="myusername" layoutX="147.0" layoutY="207.0" promptText="Username" />
+                <PasswordField fx:id="mypassword" layoutX="147.0" layoutY="250.0" promptText="Password" />
                 <Button fx:id="signup" layoutX="258.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#signupBtn" style="-fx-background-color: #fff4eb;" text="Sign up" textFill="#1d0404" underline="true" />
                 <Button fx:id="forpass" layoutX="171.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#forpassbtn" style="-fx-background-color: #fff4eb;" text="Forgot Password?" underline="true" />
                 <ImageView fitHeight="167.0" fitWidth="164.0" layoutX="176.0" pickOnBounds="true" preserveRatio="true">
