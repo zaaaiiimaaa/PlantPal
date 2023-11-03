@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -11,6 +12,12 @@ import java.io.IOException;
 
 public class myAccountController {
 
+    public Label email;
+    public Label username;
+    public Label name;
+    public Label phone;
+    public Label nationality;
+    public Label gender;
     @FXML
     private Button myGarden;
     @FXML

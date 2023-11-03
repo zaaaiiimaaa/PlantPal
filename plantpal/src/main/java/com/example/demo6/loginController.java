@@ -12,6 +12,7 @@ import javafx.scene.control.PasswordField;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import com.example.demo6.dashboardController;
 
 public class loginController {
 
@@ -27,6 +28,8 @@ public class loginController {
     private TextField myusername;
     @FXML
     private PasswordField mypassword;
+    @FXML
+            private Button userpro;
 
     String u;
     String p;
@@ -55,6 +58,9 @@ public class loginController {
        p = mypassword.getText(); // Password input from the login form
 
        String p2 = find(u);
+       dashboardController d;
+       d = new dashboardController();
+       d.setuser(u);
 
        if (p2 != null) {
            if (p2.equals(p)) {
