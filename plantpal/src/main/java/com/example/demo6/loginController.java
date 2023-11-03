@@ -84,7 +84,7 @@ public class loginController {
    }
     private String find(String u)
     {
-        try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt")))
+        try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt")))
         {
             String line;
             while((line=reader.readLine())!=null)

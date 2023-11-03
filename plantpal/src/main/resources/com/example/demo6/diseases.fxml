@@ -2,14 +2,17 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.diseasesController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.ImageSearchController">
     <children>
         <AnchorPane prefHeight="790.0" prefWidth="1540.0" style="-fx-background-color: #7ca76f;">
             <children>
@@ -90,7 +93,7 @@
                 </AnchorPane>
                 <AnchorPane layoutX="258.0" prefHeight="790.0" prefWidth="1282.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
                     <children>
-                        <TextField layoutX="79.0" layoutY="28.0" prefHeight="38.0" prefWidth="810.0" promptText="🔍   Search" style="-fx-background-color: #f8f7f2; -fx-background-radius: 20; -fx-border-color: #795c32; -fx-border-radius: 20;" />
+                        <TextField fx:id="searchField" layoutX="70.0" layoutY="54.0" prefHeight="38.0" prefWidth="741.0" promptText="🔍   Search" style="-fx-background-color: #f8f7f2; -fx-background-radius: 20; -fx-border-color: #795c32; -fx-border-radius: 20;" />
                         <Button layoutX="1126.0" layoutY="21.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #f8f7f2;">
                             <graphic>
                                 <ImageView fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
@@ -105,6 +108,54 @@
                                 <Font size="14.0" />
                             </font>
                         </Button>
+                        <AnchorPane layoutX="875.0" layoutY="85.0" prefHeight="686.0" prefWidth="357.0" style="-fx-background-color: #fff4bf; -fx-background-radius: 30;">
+                            <children>
+                                <Label layoutX="33.0" layoutY="284.0" prefHeight="58.0" prefWidth="175.0" text="Proper pesticides need to be used to help fight invasions of unwanted pests" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Comic Sans MS Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="171.0" layoutY="368.0" prefHeight="58.0" prefWidth="140.0" text="Proper rotation of plants can help prevent spread of diseases" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Comic Sans MS Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="98.0" layoutY="36.0" text="Plant Care Tips" underline="true">
+                                    <font>
+                                        <Font name="System Bold" size="23.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="179.0" layoutY="118.0" prefHeight="98.0" prefWidth="134.0" text="Use of MULCH can help prevent soil borne diseases in plants" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Comic Sans MS Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="33.0" layoutY="485.0" prefHeight="80.0" prefWidth="159.0" text="Selecting disease free plants will greatly reduce the chances of introducing disease into your garden" textAlignment="CENTER" wrapText="true">
+                                    <font>
+                                        <Font name="Comic Sans MS Bold" size="12.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <ScrollPane hbarPolicy="NEVER" layoutX="149.0" layoutY="144.0" prefHeight="620.0" prefWidth="584.0" style="-fx-background-color: #f8f7f2;" vbarPolicy="ALWAYS">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2900.0" prefWidth="570.0" style="-fx-background-color: #F8f7f2;">
+                                    <children>
+                                        <VBox fx:id="imageContainer" layoutX="7.0" layoutY="4.0" prefHeight="348.0" prefWidth="558.0" />
+                                        <VBox layoutX="7.0" layoutY="327.0" prefHeight="300.0" prefWidth="558.0" />
+                                        <VBox layoutX="7.0" layoutY="650.0" prefHeight="300.0" prefWidth="558.0" />
+                                        <VBox layoutX="7.0" layoutY="973.0" prefHeight="300.0" prefWidth="558.0" />
+                                        <VBox layoutX="7.0" layoutY="1296.0" prefHeight="300.0" prefWidth="558.0" />
+                                        <VBox layoutX="7.0" layoutY="1619.0" prefHeight="300.0" prefWidth="558.0" />
+                                        <VBox layoutX="7.0" layoutY="1942.0" prefHeight="300.0" prefWidth="558.0" />
+                                        <VBox layoutX="7.0" layoutY="2265.0" prefHeight="300.0" prefWidth="558.0" />
+                                        <VBox layoutX="7.0" layoutY="2588.0" prefHeight="300.0" prefWidth="558.0" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                        <Button layoutX="269.0" layoutY="109.0" mnemonicParsing="false" onAction="#searchImages" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-background-radius: 10; -fx-border-radius: 10;" text="Search Disease" textFill="#4b2c1c" />
+                        <Button layoutX="506.0" layoutY="109.0" mnemonicParsing="false" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-background-radius: 10; -fx-border-radius: 10;" text="Search Symptom" textFill="#4b2c1c" />
                     </children>
                 </AnchorPane>
             </children>
