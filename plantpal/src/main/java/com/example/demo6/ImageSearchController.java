@@ -21,7 +21,7 @@ public class ImageSearchController {
     private Button logoBtn;
 
     // Specify the path to your image folder
-    private final String imageFolderPath = "C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\Dimage";
+    private final String imageFolderPath = "src/Dimage";
 
     public void searchImages() {
         String searchCriteria = searchField.getText().toLowerCase();  // Convert to lowercase for case-insensitive search
