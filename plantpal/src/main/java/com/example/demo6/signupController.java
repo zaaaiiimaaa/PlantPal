@@ -58,7 +58,7 @@ public class signupController {
         String pass=PasswordField.getText();
         String repeat=RepeatField.getText();
 
-        try(BufferedWriter writer=new BufferedWriter(new FileWriter("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt",true)))
+        try(BufferedWriter writer=new BufferedWriter(new FileWriter("src/AllUsers.txt",true)))
         {
             String userdata=Full + "," + email +","+ user +","+number+","+pass+","+repeat;
             writer.write(userdata);

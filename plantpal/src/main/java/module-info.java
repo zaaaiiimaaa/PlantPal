@@ -4,6 +4,7 @@ module com.example.demo {
 
     requires com.almasb.fxgl.all;
     requires java.mail;
+    requires quartz;
 
     opens com.example.demo6 to javafx.fxml;
     exports com.example.demo6;
