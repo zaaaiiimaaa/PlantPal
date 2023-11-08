@@ -101,31 +101,31 @@
                         </ImageView>
                     </graphic>
                 </Button>
-                <ImageView fitHeight="511.0" fitWidth="357.0" layoutX="908.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../Image/mygarden.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="125.0" fitWidth="151.0" layoutX="882.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../Image/left%20bubble.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="125.0" fitWidth="151.0" layoutX="1120.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../Image/rightbubble.png" />
-                    </image>
-                </ImageView>
-                <Button layoutX="1132.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: #f8f7f2;" text="Show Garden" textFill="#2a611c" underline="true">
-                    <font>
-                        <Font name="Comic Sans MS Bold" size="15.0" />
-                    </font>
-                </Button>
-                <Button layoutX="908.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: #f8f7f2;" text="Upload Plant" textFill="#2a611c" underline="true">
-                    <font>
-                        <Font name="Comic Sans MS Bold" size="15.0" />
-                    </font>
-                </Button>
+            <ImageView fitHeight="511.0" fitWidth="357.0" layoutX="908.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Image/mygarden.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="125.0" fitWidth="151.0" layoutX="882.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Image/left%20bubble.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="125.0" fitWidth="151.0" layoutX="1120.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Image/rightbubble.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="1132.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: #f8f7f2;" text="Show Garden" textFill="#2a611c" underline="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="908.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: #f8f7f2;" text="Upload Plant" textFill="#2a611c" underline="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
     </children>
