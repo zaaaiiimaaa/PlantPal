@@ -10,6 +10,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -58,12 +59,26 @@ public class signupController {
         String pass=PasswordField.getText();
         String repeat=RepeatField.getText();
 
-        try(BufferedWriter writer=new BufferedWriter(new FileWriter("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt",true)))
+        try(BufferedWriter writer=new BufferedWriter(new FileWriter("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt",true)))
         {
             String userdata=Full + "," + email +","+ user +","+number+","+pass+","+repeat;
             writer.write(userdata);
             writer.newLine();
             writer.flush();
+            String userGardenDirectoryPath="src/User_Garden";
+            String userDirectoryPath = userGardenDirectoryPath + File.separator + user;  // Construct the user's directory path
+
+            File userDirectory = new File(userDirectoryPath);
+            if (!userDirectory.exists()) {
+                if (userDirectory.mkdir()) {
+                    System.out.println("User directory created for: " + user);
+                } else {
+                    System.err.println("Failed to create user directory for: " + user);
+                }
+            } else {
+                System.out.println("User directory already exists for: " + user);
+            }
+
             Stage stage = (Stage) signIn.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("signsuccess.fxml"));
             Scene scene = new Scene(fxmlLoader.load());

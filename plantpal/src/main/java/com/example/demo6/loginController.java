@@ -2,6 +2,7 @@ package com.example.demo6;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
@@ -12,6 +13,7 @@ import javafx.scene.control.PasswordField;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import com.example.demo6.myGardenController;
 import com.example.demo6.dashboardController;
 
 public class loginController {
@@ -62,10 +64,18 @@ public class loginController {
        d = new dashboardController();
        d.setuser(u);
 
+       myGardenController e;
+       e=new myGardenController();
+       e.setuser(u);
+
+     // myGardenController e=fxmlLoader.getController();
+
+
        if (p2 != null) {
            if (p2.equals(p)) {
                // Successful login
                System.out.println("Login successful for user: " + u);
+
 
                Stage stage = (Stage) login.getScene().getWindow();
                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
@@ -84,7 +94,7 @@ public class loginController {
    }
     private String find(String u)
     {
-        try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt")))
+        try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt")))
         {
             String line;
             while((line=reader.readLine())!=null)

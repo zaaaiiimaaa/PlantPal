@@ -60,7 +60,7 @@ public class HelloApplication extends Application {
                     .withIdentity("emailTrigger", "group1")
                     .startNow()
                     .withSchedule(simpleSchedule()
-                            .withIntervalInSeconds(40)
+                            .withIntervalInSeconds(86400)
                             .repeatForever())
                     .build();
 

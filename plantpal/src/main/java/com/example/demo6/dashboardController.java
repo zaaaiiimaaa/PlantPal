@@ -120,7 +120,6 @@ public class dashboardController {
         // System.out.println(u);
     }
 
-
     @FXML
     void aboutBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) about.getScene().getWindow();

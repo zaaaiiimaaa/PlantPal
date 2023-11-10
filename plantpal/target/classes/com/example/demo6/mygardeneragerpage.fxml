@@ -102,7 +102,7 @@
                         </ImageView>
                     </graphic>
                 </Button>
-            <ImageView fitHeight="511.0" fitWidth="357.0" layoutX="908.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="458.0" fitWidth="357.0" layoutX="908.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../Image/mygarden.png" />
                </image>
@@ -117,25 +117,26 @@
                   <Image url="@../../../Image/rightbubble.png" />
                </image>
             </ImageView>
-            <Button layoutX="1132.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: #f8f7f2;" text="Show Garden" textFill="#2a611c" underline="true">
+            <Button layoutX="1132.0" layoutY="249.0" mnemonicParsing="false" onAction="#searchImages" style="-fx-background-color: #f8f7f2;" text="Show Garden" textFill="#2a611c" underline="true">
                <font>
                   <Font name="Comic Sans MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="908.0" layoutY="249.0" mnemonicParsing="false" style="-fx-background-color: #f8f7f2;" text="Upload Plant" textFill="#2a611c" underline="true">
+            <Button layoutX="908.0" layoutY="249.0" mnemonicParsing="false" onAction="#openFileChooser" style="-fx-background-color: #f8f7f2;" text="Upload Plant" textFill="#2a611c" underline="true">
                <font>
                   <Font name="Comic Sans MS Bold" size="15.0" />
                </font>
             </Button>
-            <ScrollPane hbarPolicy="ALWAYS" layoutX="95.0" layoutY="166.0" prefHeight="505.0" prefWidth="730.0" vbarPolicy="ALWAYS">
+            <ScrollPane fx:id="myScrollPane" hbarPolicy="ALWAYS" layoutX="95.0" layoutY="166.0" prefHeight="505.0" prefWidth="730.0" vbarPolicy="ALWAYS">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="490.0" prefWidth="3500.0" style="-fx-background-color: #f8f7f2;">
                      <children>
-                        <HBox layoutX="14.0" layoutY="14.0" prefHeight="460.0" prefWidth="704.0" />
+                        <HBox fx:id="imageContainer" alignment="CENTER_RIGHT" prefHeight="460.0" prefWidth="704.0" spacing="200.0" />
                      </children>
                   </AnchorPane>
               </content>
             </ScrollPane>
+            <ImageView fx:id="profilePictureImageView" fitHeight="150.0" fitWidth="200.0" layoutX="970.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
             </children>
         </AnchorPane>
     </children>
