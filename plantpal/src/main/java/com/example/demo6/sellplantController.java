@@ -13,9 +13,64 @@ public class sellplantController {
     @FXML
     private Button logo;
     @FXML
+    private Button logout;
+    @FXML
+    private Button fertilizer;
+    @FXML
+    private Button disease;
+    @FXML
+    private Button buyplant;
+    @FXML
+    private Button myGarden;
+    @FXML
+    private Button about;
+
+    @FXML
     void logoBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) logo.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
+    @FXML
+    void logoutBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) logout.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
+    @FXML
+    void fertilizerBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) fertilizer.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fertilizer.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
+    @FXML
+    void diseaseBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) disease.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("diseases.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
+    @FXML
+    void buyplantBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) buyplant.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("buyplant.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
+    @FXML
+    void myGardenBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) myGarden.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("mygardeneragerpage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
+    @FXML
+    void aboutBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) about.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("aboutus.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
     }

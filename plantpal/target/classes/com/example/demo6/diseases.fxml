@@ -32,7 +32,7 @@
                         </Button>
                         <HBox alignment="CENTER" layoutY="215.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="MY GARDEN" underline="true">
+                                <Button fx:id="myGarden" mnemonicParsing="false" onMouseClicked="#myGardenBtn" style="-fx-background-color: #7CA76F;" text="MY GARDEN" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -50,7 +50,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="290.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="SELL PLANT" underline="true">
+                                <Button fx:id="sellplant" mnemonicParsing="false" onMouseClicked="#sellplantBtn" style="-fx-background-color: #7CA76F;" text="SELL PLANT" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -59,7 +59,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="365.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="BUY PLANT" underline="true">
+                                <Button fx:id="buyplant" mnemonicParsing="false" onMouseClicked="#buyplantBtn" style="-fx-background-color: #7CA76F;" text="BUY PLANT" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -68,23 +68,14 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="505.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="FERTILIZERS" underline="true">
+                                <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" style="-fx-background-color: #7CA76F;" text="FERTILIZERS" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
                                 </Button>
                             </children>
                         </HBox>
-                        <HBox alignment="CENTER" layoutY="575.0" prefHeight="58.0" prefWidth="258.0">
-                            <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="FORUM" underline="true">
-                                    <font>
-                                        <Font size="20.0" />
-                                    </font>
-                                </Button>
-                            </children>
-                        </HBox>
-                        <Button layoutX="78.0" layoutY="738.0" mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="ABOUT US" underline="true">
+                        <Button fx:id="about" layoutX="78.0" layoutY="738.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" style="-fx-background-color: #7CA76F;" text="ABOUT US" underline="true">
                             <font>
                                 <Font size="17.0" />
                             </font>
@@ -103,7 +94,7 @@
                                 </ImageView>
                             </graphic>
                         </Button>
-                        <Button layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
+                        <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
                             <font>
                                 <Font size="14.0" />
                             </font>
@@ -125,16 +116,26 @@
                                         <Font name="System Bold" size="23.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="179.0" layoutY="118.0" prefHeight="98.0" prefWidth="134.0" text="Use of MULCH can help prevent soil borne diseases in plants" textAlignment="CENTER" wrapText="true">
-                                    <font>
-                                        <Font name="Comic Sans MS Bold" size="12.0" />
-                                    </font>
-                                </Label>
-                                <Label layoutX="33.0" layoutY="485.0" prefHeight="80.0" prefWidth="159.0" text="Selecting disease free plants will greatly reduce the chances of introducing disease into your garden" textAlignment="CENTER" wrapText="true">
-                                    <font>
-                                        <Font name="Comic Sans MS Bold" size="12.0" />
-                                    </font>
-                                </Label>
+                        <ImageView fitHeight="178.0" fitWidth="240.0" layoutX="26.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/disease2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="224.0" fitWidth="216.0" layoutX="129.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Image/disease1.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="33.0" layoutY="460.0" prefHeight="80.0" prefWidth="159.0" text="Selecting disease free plants will greatly reduce the chances of introducing disease into your garden" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="192.0" layoutY="92.0" prefHeight="98.0" prefWidth="134.0" text="Use of MULCH can help prevent soil borne diseases in plants" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="12.0" />
+                           </font>
+                        </Label>
                             </children>
                         </AnchorPane>
                         <ScrollPane hbarPolicy="NEVER" layoutX="149.0" layoutY="144.0" prefHeight="620.0" prefWidth="584.0" style="-fx-background-color: #f8f7f2;" vbarPolicy="ALWAYS">

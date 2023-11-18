@@ -72,7 +72,7 @@ public class forgotpassContoller {
     }
     private String findUserEmail(String username)
     {
-        try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt")))
+        try(BufferedReader reader=new BufferedReader(new FileReader("src/AllUsers.txt")))
         {
             String line;
             while((line=reader.readLine())!=null)

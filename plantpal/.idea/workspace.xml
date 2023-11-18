@@ -21,6 +21,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -37,7 +40,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/GitHub/PlantPal/plantpal/src/main/resources/Image",
+    "last_opened_file_path": "C:/Users/DELL/Desktop/plantpal",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,11 +61,11 @@
       <recent name="D:\Zaima\demo6 (progga)\src\main\resources\com\example\demo6" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub\PlantPal\plantpal\src\main\resources\Image" />
       <recent name="C:\Users\ASUS\Documents\GitHub\PlantPal\plantpal\src\Dimage" />
       <recent name="D:\Zaima\demo6 (progga)\src\main\resources\com\example\demo6" />
       <recent name="D:\Zaima\demo6 (progga)\src\main\resources\kajkenokorena" />
       <recent name="D:\Zaima\demo6 (progga)\src\main\resources" />
-      <recent name="D:\Zaima\demo6 (progga)\src\main\resources\com\example\demo6\kajkenokorena" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.demo6" />
