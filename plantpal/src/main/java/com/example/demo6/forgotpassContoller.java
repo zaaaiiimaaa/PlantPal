@@ -168,7 +168,7 @@ public class forgotpassContoller {
         String newpass = NewPasswordField.getText();
         //String conpass = pp.getText();
         String un = Reuser.getText();
-        File file = new File("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt");
+        File file = new File("src/AllUsers.txt");
 
         try {
             // Read the existing content of the file

@@ -33,7 +33,7 @@
       </Label>
       <Button fx:id="Done" layoutX="262.0" layoutY="313.0" mnemonicParsing="false" onAction="#resetPassword" style="-fx-background-color: #b67f56;" text="Done" textFill="#fbfbfb" />
       <TextField fx:id="Reuser" layoutX="180.0" layoutY="99.0" prefHeight="34.0" prefWidth="214.0" />
-      <TextField fx:id="NewPasswordField" layoutX="180.0" layoutY="174.0" prefHeight="34.0" prefWidth="214.0" />
-      <TextField fx:id="pp" layoutX="180.0" layoutY="250.0" prefHeight="34.0" prefWidth="214.0" />
+      <TextField fx:id="NewPasswordField" layoutX="177.0" layoutY="174.0" prefHeight="34.0" prefWidth="214.0" />
+      <TextField fx:id="pp" layoutX="177.0" layoutY="250.0" prefHeight="34.0" prefWidth="214.0" />
     </children>
 </AnchorPane>
