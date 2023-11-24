@@ -36,7 +36,14 @@ public class sellplantController {
     @FXML
     private Button uploadButton;
     @FXML
+    private Button dontbtn;
+    @FXML
     private TextField textField;
+    @FXML
+    private TextField des;
+    @FXML
+    private TextField pr;
+
     @FXML
     private TextField contact;
     @FXML
@@ -94,6 +101,13 @@ public class sellplantController {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
     }
+    @FXML
+    void doneBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) about.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sellplant.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
 
     @FXML
     private void uploadImage() throws IOException {
@@ -114,7 +128,7 @@ public class sellplantController {
             imageView.setImage(new Image("file:" + destinationPath));
 
             // Save the image path and textfield content to a text file
-            saveToTextFile( textField.getText(),destinationPath,contact.getText());
+            saveToTextFile( textField.getText(),des.getText(),pr.getText(),destinationPath,contact.getText());
         }
     }
 
@@ -126,9 +140,9 @@ public class sellplantController {
         return "";
     }
 
-    private void saveToTextFile(String text, String imagePath, String textFieldContent) throws IOException {
+    private void saveToTextFile(String text,String desc,String prc, String imagePath, String textFieldContent) throws IOException {
         try (FileWriter fileWriter = new FileWriter("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt", true)) {
-            fileWriter.write( text+" , "+imagePath  +" , "+ textFieldContent + "\n");
+            fileWriter.write( text+" , "+desc+" , "+prc+" , "+imagePath  +" , "+ textFieldContent + "\n");
         }
     }
 }

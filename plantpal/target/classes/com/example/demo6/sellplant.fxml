@@ -106,8 +106,8 @@
                         <Font name="Comic Sans MS Bold" size="21.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="textField" layoutX="319.0" layoutY="463.0" prefHeight="38.0" prefWidth="299.0" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-border-radius: 20;" />
-                  <Label layoutX="155.0" layoutY="470.0" text="Plant Name" textFill="#4b2121">
+                  <TextField fx:id="textField" layoutX="319.0" layoutY="385.0" prefHeight="38.0" prefWidth="299.0" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-border-radius: 20;" />
+                  <Label layoutX="155.0" layoutY="392.0" text="Plant Name" textFill="#4b2121">
                      <font>
                         <Font name="Comic Sans MS Bold" size="17.0" />
                      </font>
@@ -122,12 +122,29 @@
                         <Font name="Comic Sans MS Bold" size="15.0" />
                      </font>
                   </Button>
-                  <AnchorPane layoutX="315.0" layoutY="179.0" prefHeight="216.0" prefWidth="308.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+                  <AnchorPane layoutX="319.0" layoutY="102.0" prefHeight="216.0" prefWidth="308.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
                      <children>
-                        <ImageView fx:id="imageView" fitHeight="208.0" fitWidth="290.0" layoutX="9.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="imageView" fitHeight="208.0" fitWidth="290.0" layoutX="9.0" layoutY="-104.0" pickOnBounds="true" preserveRatio="true" />
                      </children>
                   </AnchorPane>
                   <TextField fx:id="contact" layoutX="319.0" layoutY="565.0" prefHeight="38.0" prefWidth="299.0" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-border-radius: 20;" />
+                  <Label fx:id="description" layoutX="155.0" layoutY="451.0" text="Description" textFill="#4b2121">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price" layoutX="155.0" layoutY="509.0" text="Price" textFill="#4b2121">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="des" layoutX="319.0" layoutY="444.0" prefHeight="38.0" prefWidth="299.0" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-border-radius: 20;" />
+                  <TextField fx:id="pr" layoutX="319.0" layoutY="502.0" prefHeight="38.0" prefWidth="299.0" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-border-radius: 20;" />
+                  <Button fx:id="donebtn" layoutX="441.0" layoutY="722.0" mnemonicParsing="false" onMouseClicked="#doneBtn" style="-fx-background-color: #7ca76f;" text="Done" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                  </Button>
                     </children>
                 </AnchorPane>
             </children>
