@@ -27,7 +27,7 @@
                     </graphic></Button>
                 <HBox alignment="CENTER" layoutY="215.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="182.0" style="-fx-background-color: #7CA76F;" text="MY GARDEN" textFill="#fafafa" underline="true">
+                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="182.0" style="-fx-background-color: #7CA76F;" text="MY GARDEN" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -36,16 +36,7 @@
                 </HBox>
                 <HBox alignment="CENTER" layoutY="290.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button fx:id="sellplant" mnemonicParsing="false" onMouseClicked="#sellplantBtn" style="-fx-background-color: #7CA76F;" text="SELL PLANT" textFill="#fafafa" underline="true">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Button>
-                    </children>
-                </HBox>
-                <HBox alignment="CENTER" layoutY="505.0" prefHeight="58.0" prefWidth="258.0">
-                    <children>
-                        <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" style="-fx-background-color: #7CA76F;" text="DISEASES" textFill="#fafafa" underline="true">
+                        <Button fx:id="sellplant" mnemonicParsing="false" onMouseClicked="#sellplantBtn" style="-fx-background-color: #7CA76F;" text="SELL PLANT" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -54,7 +45,16 @@
                 </HBox>
                 <HBox alignment="CENTER" layoutY="435.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" style="-fx-background-color: #7CA76F;" text="FERTILIZERS" textFill="#fafafa" underline="true">
+                        <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" style="-fx-background-color: #7CA76F;" text="DISEASES" underline="true">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutY="505.0" prefHeight="58.0" prefWidth="258.0">
+                    <children>
+                        <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" style="-fx-background-color: #7CA76F;" text="FERTILIZERS" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -63,23 +63,14 @@
                 </HBox>
                 <HBox alignment="CENTER" layoutY="365.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button fx:id="buyplant" mnemonicParsing="false" onMouseClicked="#buyplantBtn" style="-fx-background-color: #7CA76F;" text="BUY PLANT" textFill="#fafafa" underline="true">
+                        <Button fx:id="buyplant" mnemonicParsing="false" onMouseClicked="#buyplantBtn" style="-fx-background-color: #7CA76F;" text="BUY PLANT" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
                         </Button>
                     </children>
                 </HBox>
-                <HBox alignment="CENTER" layoutY="575.0" prefHeight="58.0" prefWidth="258.0">
-                    <children>
-                        <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="FORUM" textFill="#fafafa" underline="true">
-                            <font>
-                                <Font size="20.0" />
-                            </font>
-                        </Button>
-                    </children>
-                </HBox>
-                <Button fx:id="about" layoutX="78.0" layoutY="727.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" style="-fx-background-color: #7CA76F;" text="ABOUT US" textFill="#fafafa" underline="true">
+                <Button fx:id="about" layoutX="78.0" layoutY="727.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" style="-fx-background-color: #7CA76F;" text="ABOUT US" underline="true">
                     <font>
                         <Font size="17.0" />
                     </font>
