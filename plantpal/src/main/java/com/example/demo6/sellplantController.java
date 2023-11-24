@@ -4,10 +4,19 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
 public class sellplantController {
     @FXML
@@ -24,6 +33,17 @@ public class sellplantController {
     private Button myGarden;
     @FXML
     private Button about;
+    @FXML
+    private Button uploadButton;
+    @FXML
+    private TextField textField;
+    @FXML
+    private TextField contact;
+    @FXML
+    private ImageView imageView;
+
+    private String imageDirectoryPath="src/sellimage/";
+
 
     @FXML
     void logoBtn(MouseEvent event) throws IOException {
@@ -73,5 +93,42 @@ public class sellplantController {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("aboutus.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
+    }
+
+    @FXML
+    private void uploadImage() throws IOException {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select Image File");
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.jpeg"));
+
+        // Show the file chooser dialog and wait for the user to select a file
+        File selectedFile = fileChooser.showOpenDialog(new Stage());
+
+        if (selectedFile != null) {
+            // Save the image to the directory
+            String uniqueFileName = "image_" + System.currentTimeMillis() + getFileExtension(selectedFile.getName());
+            String destinationPath = imageDirectoryPath + uniqueFileName;
+            Files.copy(selectedFile.toPath(), Paths.get(destinationPath), StandardCopyOption.REPLACE_EXISTING);
+
+            // Display the image in the ImageView
+            imageView.setImage(new Image("file:" + destinationPath));
+
+            // Save the image path and textfield content to a text file
+            saveToTextFile( textField.getText(),destinationPath,contact.getText());
+        }
+    }
+
+    private String getFileExtension(String fileName) {
+        int dotIndex = fileName.lastIndexOf('.');
+        if (dotIndex >= 0) {
+            return fileName.substring(dotIndex);
+        }
+        return "";
+    }
+
+    private void saveToTextFile(String text, String imagePath, String textFieldContent) throws IOException {
+        try (FileWriter fileWriter = new FileWriter("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt", true)) {
+            fileWriter.write( text+" , "+imagePath  +" , "+ textFieldContent + "\n");
+        }
     }
 }

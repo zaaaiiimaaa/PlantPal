@@ -35,7 +35,7 @@
                         <Font name="Berlin Sans FB Bold" size="19.0" />
                     </font>
                 </Label>
-                <Button fx:id="login" layoutX="199.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#loginBtn" style="-fx-background-color: #b67f56;" text="Login" textFill="WHITE" />
+                <Button fx:id="login" layoutX="199.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#loginBtn" style="-fx-background-color: #b67f56;" text="Login" textFill="WHITE" />
                 <Label layoutX="130.0" layoutY="368.0" text="Don't have an acoount?" underline="true" />
                 <ImageView fitHeight="44.0" fitWidth="90.0" layoutX="222.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -45,7 +45,7 @@
                 <TextField fx:id="myusername" layoutX="147.0" layoutY="207.0" promptText="Username" />
                 <PasswordField fx:id="mypassword" layoutX="147.0" layoutY="250.0" promptText="Password" />
                 <Button fx:id="signup" layoutX="258.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#signupBtn" style="-fx-background-color: #fff4eb;" text="Sign up" textFill="#1d0404" underline="true" />
-                <Button fx:id="forpass" layoutX="171.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#forpassbtn" style="-fx-background-color: #fff4eb;" text="Forgot Password?" underline="true" />
+                <Button fx:id="forpass" layoutX="167.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#forpassbtn" style="-fx-background-color: #fff4eb;" text="Forgot Password?" underline="true" />
                 <ImageView fitHeight="167.0" fitWidth="164.0" layoutX="176.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../../Image/Untitled design (4)hehe.png" />
@@ -56,6 +56,7 @@
                         <Image url="@../../../Image/Planal (2)he.png" />
                     </image>
                 </ImageView>
+            <Label fx:id="passwordex" layoutX="146.0" layoutY="279.0" text="Label" visible="false" />
             </children>
         </AnchorPane>
     </right>

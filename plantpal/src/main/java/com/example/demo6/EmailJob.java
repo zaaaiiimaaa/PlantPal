@@ -4,22 +4,41 @@ import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 
-import javax.mail.MessagingException;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EmailJob implements Job {
     public void execute(JobExecutionContext context) throws JobExecutionException {
-        // Here you would retrieve any job data map parameters or context you've set
-        // For simplicity, we're using hardcoded email details
-        String message = "Hello user, this is your scheduled message.";
+        String message = "Hello user, It is time to water your plants.";
         String subject = "Scheduled Email from PlantPal";
-        String to = "pialeemoni@gmail.com"; // This should be replaced with the recipient's email
         String from = "plantpalcommunity@gmail.com";
 
         try {
-            Email2.sendEmail(message, subject, to, from);
-        } catch (MessagingException e) {
+            List<String> emailAddresses = getEmailAddresses();
+
+            for (String to : emailAddresses) {
+                Email2.sendEmail(message, subject, to, from);
+            }
+        } catch (Exception e) {
             throw new JobExecutionException(e);
         }
     }
-}
 
+    private List<String> getEmailAddresses() throws IOException {
+        List<String> emailAddresses = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader("src/AllUsers.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length > 1) {
+                    String email = parts[1].trim(); // Assuming email is the second entry
+                    emailAddresses.add(email);
+                }
+            }
+        }
+        return emailAddresses;
+    }
+}

@@ -1,8 +1,4 @@
 progga,pialeemoni@gmail.com,progga,q45245,ew,ew
 zaima ahmed,zaimaahmed101@gmail.com,zaimaa1,012928374,2244,2244
-Nabiha,skmdks,nldnkd,dzld,123,123
 Nabiha,nabihaparvez11@gmail.com,nabiha45,01711386594,1234,1234
-Nadeem Parvez,nadeempali@gmail.com,nadeem,012992021,1234,1234
-eotryo,pialeemoni@gmail.com,ok,256235,lp,lp
-um,pialeemoni@gmail.com,pl,3462346,ki,ki
-miku,pialeemoni@gmail.com,mika,2346236,the1,the1
+

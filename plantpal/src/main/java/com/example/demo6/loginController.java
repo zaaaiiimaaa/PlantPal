@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.scene.control.TextField;
@@ -30,6 +31,8 @@ public class loginController {
     private TextField myusername;
     @FXML
     private PasswordField mypassword;
+    @FXML
+    private Label passwordex;
     @FXML
             private Button userpro;
 
@@ -85,6 +88,8 @@ public class loginController {
                stage.show();
            } else {
                // Password doesn't match
+               passwordex.setText("Password Incorrect For User "+u);
+               passwordex.setVisible(true);
                System.out.println("Incorrect password for user: " + u);
            }
        } else {

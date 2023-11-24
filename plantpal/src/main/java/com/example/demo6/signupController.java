@@ -9,10 +9,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.util.regex.Pattern;
 
 public class signupController {
 
@@ -48,6 +46,10 @@ public class signupController {
     private TextField PasswordField;
     @FXML
     private TextField RepeatField;
+    @FXML
+    private Label usernameex;
+    @FXML
+    private Label emailex;
 
 
     @FXML
@@ -58,6 +60,35 @@ public class signupController {
         String number=NumberField.getText();
         String pass=PasswordField.getText();
         String repeat=RepeatField.getText();
+        try {
+            boolean hasError = false;
+
+            if (!isValidEmail(email)) {
+                emailex.setText("Email should end with gmail.com");
+                emailex.setVisible(true);
+                hasError = true;
+            } else {
+                emailex.setVisible(false); // Hide if no error
+            }
+
+            if (isUsernameTaken(user)) {
+                usernameex.setText("Username is already taken");
+                usernameex.setVisible(true);
+                hasError = true;
+            } else {
+                usernameex.setVisible(false); // Hide if no error
+            }
+
+            if (hasError) {
+                return; // Return only if there's at least one error
+            }
+
+            // Proceed with further actions if there are no errors
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            // Optionally, handle the exception in the UI
+        }
 
         try(BufferedWriter writer=new BufferedWriter(new FileWriter("src/AllUsers.txt",true)))
         {
@@ -88,6 +119,28 @@ public class signupController {
         catch(IOException e){
             e.printStackTrace();
         }
+    }
+
+    private boolean isUsernameTaken(String username) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader("src/AllUsers.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length > 2 && parts[2].trim().equals(username)) {
+                    return true; // Username found in the file, thus it's taken
+                }
+            }
+        }
+        return false; // No matching username found, thus it's not taken
+    }
+    private boolean isValidEmail(String email) {
+        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:gmail\\.com)$";
+
+        Pattern pattern = Pattern.compile(emailRegex);
+        if (email == null) {
+            return false;
+        }
+        return pattern.matcher(email).matches();
     }
 
 }
