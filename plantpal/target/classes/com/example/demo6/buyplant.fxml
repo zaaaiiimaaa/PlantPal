@@ -97,25 +97,26 @@
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                  <VBox layoutX="75.0" layoutY="14.0" prefHeight="754.0" prefWidth="799.0">
-                     <children>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-                           <children>
-                                    <TextField prefHeight="38.0" prefWidth="600.0" promptText="🔍   Search Plant" style="-fx-background-color: #f8f7f2; -fx-background-radius: 20; -fx-border-color: #795c32; -fx-border-radius: 20;" />
-                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="66.0" style="-fx-background-color: #795c32; -fx-border-color: #795c32; -fx-border-radius: 15;" text="Search" textFill="WHITE">
-                                 <font>
-                                    <Font name="System Bold" size="13.0" />
-                                 </font>
-                              </Button>
-                           </children>
-                        </HBox>
-                        <ScrollPane hbarPolicy="NEVER" prefHeight="650.0" prefWidth="799.0">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="651.0" prefWidth="802.0" style="-fx-background-color: #f8f7f2;" />
-                          </content>
-                        </ScrollPane>
-                     </children>
-                  </VBox>
+                        <VBox layoutX="75.0" layoutY="14.0" alignment="CENTER" prefHeight="754.0" prefWidth="799.0">
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <TextField fx:id="searchField" prefHeight="38.0" prefWidth="600.0" promptText="🔍   Search Plant" style="-fx-background-color: #f8f7f2; -fx-background-radius: 20; -fx-border-color: #795c32; -fx-border-radius: 20;" />
+                                        <Button fx:id="searchButton" alignment="CENTER" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="33.0" prefWidth="66.0" style="-fx-background-color: #795c32; -fx-border-color: #795c32; -fx-border-radius: 15;" text="Search" textFill="WHITE">
+                                            <font>
+                                                <Font name="System Bold" size="13.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </HBox>
+                                <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="650.0" prefWidth="799.0" fitToWidth="true">
+                                    <content>
+
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="651.0" prefWidth="802.0" style="-fx-background-color: #f8f7f2;" />
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                        </VBox>
                     </children>
                 </AnchorPane>
             </children>

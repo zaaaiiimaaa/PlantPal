@@ -51,7 +51,7 @@ public class dashboardController {
     }
 
 
-    String user1;
+    static String user1;
     @FXML
     void myGardenBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) myGarden.getScene().getWindow();
@@ -76,6 +76,7 @@ public class dashboardController {
             controller.email.setText(email1);
             controller.name.setText(name1);
             controller.phone.setText(phonenumber);
+            controller.username.setText(user1);
             System.out.println(name1);
             System.out.println(email1);
             System.out.println(phonenumber);

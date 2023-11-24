@@ -1,4 +1,6 @@
-Cactus , src/sellimage/image_1700795635024.png , 01720298784
-Bonsai , src/sellimage/image_1700795703529.jpg , 01720298784
-Patabahar , This is a Flower , $4 , src/sellimage/image_1700799205983.jpg , 12345678
-Kukur , this is a animal , $76.00 , src/sellimage/image_1700799512286.jpg , 01720298784
+Patabahar , This is a Flower , 4 , src/sellimage/image_1700799205983.jpg , 12345678
+Kukur , this is a animal , 76.00 , src/sellimage/image_1700799512286.jpg , 01720298784
+hibiscus , njaksjk , 12 , src/sellimage/image_1700800881706.png , 12345678
+Progga , human , 100 , C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage/image_1700802312780.png , 123456
+zaima , ahsdkjkds , 100 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700802374642.png, 1234567
+nabiha , addsalk , 100 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700802595738.png , 123456
