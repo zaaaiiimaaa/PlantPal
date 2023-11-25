@@ -24,7 +24,7 @@ import java.util.List;
 public class buyplantController {
 
     @FXML
-    private Button logo, logout, searchButton;
+    private Button logo, logout, searchButton,sellplant;
     @FXML
     private TextField searchField;
     @FXML
@@ -41,6 +41,11 @@ public class buyplantController {
     void logoutBtn(MouseEvent event) throws IOException {
         changeScene("login.fxml");
     }
+    @FXML
+    void sellplantBtn(MouseEvent event) throws IOException {
+        changeScene("sellplant.fxml");
+    }
+
 
     private void changeScene(String fxmlFile) throws IOException {
         Stage stage = (Stage) logout.getScene().getWindow();
@@ -62,7 +67,7 @@ public class buyplantController {
     }
 
     private void loadPlantsFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] plantData = line.split(",");

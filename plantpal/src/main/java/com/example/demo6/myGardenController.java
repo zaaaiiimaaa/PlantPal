@@ -168,7 +168,7 @@ public class myGardenController {
     private HBox imageContainer;
     @FXML
     private ScrollPane myScrollPane;
-    private final String imageFolderPath = "C:\\GitHub\\PlantPal\\plantpal\\src\\User_Garden";
+    private final String imageFolderPath = "C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\User_Garden";
     public void searchImages() {
         //String searchCriteria = searchField.getText().toLowerCase();  // Convert to lowercase for case-insensitive search
         String searchCriteria=username.toLowerCase();

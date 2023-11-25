@@ -49,7 +49,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="290.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="SELL PLANT" underline="true">
+                                <Button fx:id="sellplant" mnemonicParsing="false" onMouseClicked="#sellplantBtn" style="-fx-background-color: #7CA76F;" text="SELL PLANT" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -97,7 +97,7 @@
                                 <Font size="14.0" />
                             </font>
                         </Button>
-                        <VBox layoutX="75.0" layoutY="14.0" alignment="CENTER" prefHeight="754.0" prefWidth="799.0">
+                        <VBox alignment="CENTER" layoutX="75.0" layoutY="14.0" prefHeight="754.0" prefWidth="799.0">
                             <children>
                                 <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                                     <children>
@@ -109,7 +109,7 @@
                                         </Button>
                                     </children>
                                 </HBox>
-                                <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="650.0" prefWidth="799.0" fitToWidth="true">
+                                <ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" prefHeight="650.0" prefWidth="799.0">
                                     <content>
 
                                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="651.0" prefWidth="802.0" style="-fx-background-color: #f8f7f2;" />

@@ -156,7 +156,7 @@
                             </content>
                         </ScrollPane>
                         <Button layoutX="269.0" layoutY="109.0" mnemonicParsing="false" onAction="#searchImages" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-background-radius: 10; -fx-border-radius: 10;" text="Search Disease" textFill="#4b2c1c" />
-                        <Button layoutX="506.0" layoutY="109.0" mnemonicParsing="false" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-background-radius: 10; -fx-border-radius: 10;" text="Search Symptom" textFill="#4b2c1c" />
+                        <Button layoutX="506.0" layoutY="109.0" mnemonicParsing="false" onAction="#searchImages" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-background-radius: 10; -fx-border-radius: 10;" text="Search Symptom" textFill="#4b2c1c" />
                     </children>
                 </AnchorPane>
             </children>

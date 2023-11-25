@@ -37,7 +37,7 @@ public class ImageSearchController {
 
         File folder = new File(imageFolderPath);
         File[] imageFiles = folder.listFiles();
-
+        boolean foundMatch=false;
         if (imageFiles != null) {
             for (File imageFile : imageFiles) {
                 String imageName = imageFile.getName().toLowerCase();  // Convert to lowercase for case-insensitive search
@@ -50,6 +50,17 @@ public class ImageSearchController {
                     // Add the ImageView to the container
                     imageContainer.getChildren().add(imageView);
                 }
+            }
+        }
+        if (!foundMatch) {
+            File sorryImageFile = new File(imageFolderPath + "/sorry.png");
+            if (sorryImageFile.exists()) {
+                ImageView defaultImageView = new ImageView(new Image(sorryImageFile.toURI().toString()));
+                defaultImageView.setFitWidth(400); // Set the width to match other images
+                defaultImageView.setPreserveRatio(true);
+                imageContainer.getChildren().add(defaultImageView);
+            } else {
+                System.out.println("Default image 'sorry.png' not found.");
             }
         }
     }

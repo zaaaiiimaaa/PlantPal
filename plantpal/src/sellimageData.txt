@@ -4,3 +4,5 @@ hibiscus , njaksjk , 12 , src/sellimage/image_1700800881706.png , 12345678
 Progga , human , 100 , C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage/image_1700802312780.png , 123456
 zaima , ahsdkjkds , 100 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700802374642.png, 1234567
 nabiha , addsalk , 100 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700802595738.png , 123456
+
+Progga , Human , 500 ,C:\Users\ASUS\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700868046240.png , 57
