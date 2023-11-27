@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="469.0" prefWidth="323.0" style="-fx-background-color: #f8f7f2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.Privacypolicy">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" layoutY="51.0" prefHeight="416.0" prefWidth="323.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1193.0" prefWidth="323.0" style="-fx-background-color: #f8f7f2;">
+                    <children>
+                        <Label layoutX="25.0" layoutY="14.0" prefHeight="115.0" prefWidth="273.0" text="Thank you for choosing PlantPal! This Privacy Policy is designed to help you understand how we collect, use, and safeguard your personal information. Please take a moment to read and understand our practices regarding your data." wrapText="true">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="118.0" prefHeight="301.0" prefWidth="273.0" text="1. Information We Collect:a. Account Information:When you create an account on PlantPal, we collect your username, email address, and password.b. Profile Information:You have the option to provide additional information in your profile, such as a profile picture or a short bio.c. Uploaded Images:If you upload images of your indoor plants, we store these images to provide you with relevant features like plant disease identification and for your reference.d. Transaction Information:When you buy or sell plants or fertilizers on PlantPal, we collect transaction details, including payment information.e. Log Data:We automatically collect information about your interactions with the PlantPal application, such as the type of device you use, your IP address, and the pages you visit." wrapText="true" />
+                        <Label layoutX="25.0" layoutY="419.0" prefHeight="249.0" prefWidth="267.0" text="2. How We Use Your Information:a. To Provide Services:We use your information to provide you with the services offered by PlantPal, including account creation, image upload, plant disease identification, and facilitating transactions.b. Personalization:We may use your data to personalize your experience, recommend relevant products, and improve our services.c. Communication:We may send you important updates, notifications, and promotional emails related to PlantPal.d. Security:Your data is crucial to us. We implement security measures to protect your information from unauthorized access and maintain the confidentiality of your data." wrapText="true" />
+                        <Label layoutX="25.0" layoutY="668.0" prefHeight="189.0" prefWidth="267.0" text="3. Sharing Your Information:a. With Your Consent:We may share your information with third parties if you provide explicit consent.b. Service Providers:We may engage third-party service providers to assist us in delivering our services, such as payment processors or cloud hosting services.c. Legal Requirements:We may disclose your information if required by law or in response to valid requests by public authorities." wrapText="true" />
+                        <Label layoutX="25.0" layoutY="844.0" prefHeight="115.0" prefWidth="259.0" text="4. Changes to This Privacy Policy:We reserve the right to update our Privacy Policy. We will notify you of any changes by posting the new Privacy Policy on this page." wrapText="true" />
+                        <Label layoutX="25.0" layoutY="944.0" prefHeight="79.0" prefWidth="273.0" text="5. Contact Us:If you have any questions or concerns about this Privacy Policy, please contact us at plantpalcommunity@gmail.com." wrapText="true" />
+                        <Label layoutX="25.0" layoutY="1033.0" prefHeight="57.0" prefWidth="273.0" text="By using PlantPal, you agree to the terms outlined in this Privacy Policy." textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Label layoutX="60.0" layoutY="14.0" text="PRIVACY POLICIES">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
