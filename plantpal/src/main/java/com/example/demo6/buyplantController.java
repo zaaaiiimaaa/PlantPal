@@ -29,14 +29,39 @@ public class buyplantController {
     private TextField searchField;
     @FXML
     private ScrollPane scrollPane;
-
+    @FXML
+    private Button myGarden;
+    @FXML
+    private Button disease;
+    @FXML
+    private Button fertilizer,about;
     private List<Plant> plantsForSale = new ArrayList<>();
 
     @FXML
     void logoBtn(MouseEvent event) throws IOException {
         changeScene("dashboard.fxml");
     }
-
+    @FXML
+    void myGardenBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) myGarden.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("mygardeneragerpage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
+    @FXML
+    void aboutBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) about.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("aboutus.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
+    @FXML
+    void fertilizerBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) fertilizer.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fertilizer.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
     @FXML
     void logoutBtn(MouseEvent event) throws IOException {
         changeScene("login.fxml");
@@ -45,7 +70,13 @@ public class buyplantController {
     void sellplantBtn(MouseEvent event) throws IOException {
         changeScene("sellplant.fxml");
     }
-
+    @FXML
+    void diseaseBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) disease.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("diseases.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
 
     private void changeScene(String fxmlFile) throws IOException {
         Stage stage = (Stage) logout.getScene().getWindow();
