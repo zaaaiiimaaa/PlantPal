@@ -40,7 +40,7 @@ public class myAccountController {
     @FXML
     void myGardenBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) myGarden.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("myGarden.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("mygardeneragerpage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
     }

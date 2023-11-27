@@ -49,13 +49,7 @@ public class myGardenController {
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
     }
-    @FXML
-    void myproBtn(MouseEvent event) throws IOException {
-        Stage stage = (Stage) mypro.getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("myaccount.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-    }
+
     @FXML
     void logoutBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) logout.getScene().getWindow();
