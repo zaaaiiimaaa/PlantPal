@@ -29,7 +29,7 @@
                         </Button>
                         <HBox alignment="CENTER" layoutY="215.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="MY GARDEN" underline="true">
+                                <Button fx:id="myGarden" mnemonicParsing="false" onMouseClicked="#myGardenBtn" style="-fx-background-color: #7CA76F;" text="MY GARDEN" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -38,7 +38,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="435.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="DISEASES" underline="true">
+                                <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" style="-fx-background-color: #7CA76F;" text="DISEASES" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -56,7 +56,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="365.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="BUY PLANT" underline="true">
+                                <Button fx:id="buyplant" mnemonicParsing="false" onMouseClicked="#buyplantBtn" style="-fx-background-color: #7CA76F;" text="BUY PLANT" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -72,7 +72,7 @@
                                 </Button>
                             </children>
                         </HBox>
-                        <Button layoutX="78.0" layoutY="738.0" mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="ABOUT US" underline="true">
+                        <Button fx:id="about" layoutX="78.0" layoutY="738.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" style="-fx-background-color: #7CA76F;" text="ABOUT US" underline="true">
                             <font>
                                 <Font size="17.0" />
                             </font>
@@ -81,16 +81,7 @@
                 </AnchorPane>
                 <AnchorPane layoutX="258.0" prefHeight="790.0" prefWidth="1282.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
                     <children>
-                        <Button layoutX="1126.0" layoutY="21.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #f8f7f2;">
-                            <graphic>
-                                <ImageView fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../Image/userrr.png" />
-                                    </image>
-                                </ImageView>
-                            </graphic>
-                        </Button>
-                        <Button layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
+                        <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
                             <font>
                                 <Font size="14.0" />
                             </font>
