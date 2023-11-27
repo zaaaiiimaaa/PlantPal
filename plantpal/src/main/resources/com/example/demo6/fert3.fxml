@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: #f8f7f2; -fx-border-color: #4b3a26; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.fertilizerController">
+    <children>
+        <ImageView fitHeight="172.0" fitWidth="159.0" layoutX="133.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Image/nitrofert.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="82.0" layoutY="238.0" text="**PlantPal Nitrogen Fertilizer**">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="152.0" layoutY="230.0" prefHeight="118.0" prefWidth="113.0" text="- Urea         -Ammonium Nitrate" wrapText="true" />
+        <Label layoutX="152.0" layoutY="311.0" text="**Benefits:**">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="113.0" layoutY="329.0" prefHeight="118.0" prefWidth="175.0" text="PlantPal Nitrogen Fertilizer is a high-quality nitrogen source, promoting vigorous leaf and stem growth. Kickstart your plants' greenery and overall health with this nutrient-rich formula." textAlignment="CENTER" wrapText="true" />
+        <Label layoutX="114.0" layoutY="454.0" text="**Usage Instructions:**">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="133.0" layoutY="480.0" prefHeight="118.0" prefWidth="131.0" text="-Apply 1 tablespoon per square foot of soil. -Water thoroughly after application.              -Use during the vegetative growth phase." textAlignment="JUSTIFY" wrapText="true" />
+        <Label layoutX="129.0" layoutY="616.0" text="PlantPal Gardens Ltd.">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+      <Label layoutX="154.0" layoutY="208.0" text="PRICE:  $13.99">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

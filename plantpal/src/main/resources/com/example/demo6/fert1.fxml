@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: #f8f7f2; -fx-border-color: #4b3a26; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.fertilizerController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="124.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Image/npkfert.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="101.0" layoutY="198.0" text="**PlantPal NPK Fertilizer**">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="198.0" prefHeight="118.0" prefWidth="113.0" text="**Ingredients:** -Nitrogen (N): 10% -Phosphorus (P): 8% -Potassium (K): 6%" textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="152.0" layoutY="303.0" text="**Benefits:**">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="329.0" prefHeight="118.0" prefWidth="175.0" text="PlantPal NPK Fertilizer is specially formulated to enhance plant growth and vitality. Our balanced blend of nutrients promotes lush foliage, vibrant blooms, and robust root development." textAlignment="CENTER" wrapText="true" />
+      <Label layoutX="114.0" layoutY="454.0" text="**Usage Instructions:**">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="480.0" prefHeight="118.0" prefWidth="131.0" text="-Apply 1 tablespoon per square foot of soil. -Water thoroughly after application.              -Use every 2 weeks during the growing season." textAlignment="JUSTIFY" wrapText="true" />
+      <Label layoutX="129.0" layoutY="616.0" text="PlantPal Gardens Ltd.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="176.0" text="PRICE:  $13.99">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -102,9 +102,10 @@
                               <Image url="@../../../Image/npkfert.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="105.0" layoutY="196.0" text="NPK FERTILIZER">
+                        <Button fx:id="npk" layoutX="103.0" layoutY="203.0" mnemonicParsing="false" onMouseClicked="#npkBtn" prefHeight="27.0" prefWidth="132.0" style="-fx-background-color: #f8f7f2; -fx-border-radius: 20; -fx-border-color: #4b3a26;" text="NPK FERTILIZER" />
+                        <Label layoutX="138.0" layoutY="236.0" text="1300 grams">
                            <font>
-                              <Font name="Comic Sans MS Bold" size="15.0" />
+                              <Font size="14.0" />
                            </font>
                         </Label>
                      </children>
@@ -116,9 +117,10 @@
                               <Image url="@../../../Image/phosphatefert.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="73.0" layoutY="192.0" text="PHOSPHATE FERTILIZER">
+                        <Button fx:id="Phopho" layoutX="98.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#phosphoBtn" prefHeight="27.0" prefWidth="142.0" style="-fx-background-color: #f8f7f2; -fx-border-radius: 20; -fx-border-color: #4b3a26;" text="Phosphate FERTILIZER" />
+                        <Label layoutX="129.0" layoutY="234.0" text="1300 grams">
                            <font>
-                              <Font name="Comic Sans MS Bold" size="15.0" />
+                              <Font size="14.0" />
                            </font>
                         </Label>
                      </children>
@@ -130,23 +132,25 @@
                               <Image url="@../../../Image/nitrofert.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="77.0" layoutY="193.0" text="NITROGEN FERTILIZER">
+                        <Button fx:id="nitro" layoutX="98.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#nitroBtn" prefHeight="27.0" prefWidth="141.0" style="-fx-background-color: #f8f7f2; -fx-border-radius: 20; -fx-border-color: #4b3a26;" text="NITROGEN FERTILIZER" />
+                        <Label layoutX="133.0" layoutY="232.0" text="1300 grams">
                            <font>
-                              <Font name="Comic Sans MS Bold" size="15.0" />
+                              <Font size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="547.0" layoutY="84.0" prefHeight="268.0" prefWidth="338.0" style="-fx-border-radius: 20; -fx-border-color: #795c32;">
                      <children>
-                        <ImageView fitHeight="178.0" fitWidth="187.0" layoutX="99.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="178.0" fitWidth="187.0" layoutX="99.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../Image/organicfert.png" />
                            </image>
                         </ImageView>
-                        <Label layoutX="83.0" layoutY="192.0" text="ORGANIC FERTILIZER">
+                        <Button fx:id="organic" layoutX="103.0" layoutY="204.0" mnemonicParsing="false" onMouseClicked="#organicBtn" prefHeight="27.0" prefWidth="132.0" style="-fx-background-color: #f8f7f2; -fx-border-radius: 20; -fx-border-color: #4b3a26;" text="ORGANIC FERTILIZER" />
+                        <Label layoutX="133.0" layoutY="234.0" text="1300 grams">
                            <font>
-                              <Font name="Comic Sans MS Bold" size="15.0" />
+                              <Font size="14.0" />
                            </font>
                         </Label>
                      </children>
