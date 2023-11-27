@@ -34,11 +34,20 @@ public class myAccountController {
     private Button fertilizer;
     @FXML
     private Button disease;
+    @FXML
+    private Button editpro;
 
     @FXML
     void myGardenBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) myGarden.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("myGarden.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setScene(scene);
+    }
+    @FXML
+    void editproBtn(MouseEvent event) throws IOException {
+        Stage stage = (Stage) editpro.getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("editprofile.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
     }

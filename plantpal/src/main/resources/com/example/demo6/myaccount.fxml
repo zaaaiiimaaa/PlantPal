@@ -96,7 +96,7 @@
                                 <Font name="Berlin Sans FB" size="18.0" />
                             </font>
                         </Label>
-                        <Button layoutX="554.0" layoutY="612.0" mnemonicParsing="false" style="-fx-background-color: #f8f7f2;" text="EDIT PROFILE" underline="true" />
+                        <Button fx:id="editpro" layoutX="554.0" layoutY="612.0" mnemonicParsing="false" onMouseClicked="#editproBtn" style="-fx-background-color: #f8f7f2;" text="EDIT PROFILE" underline="true" />
                           <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
                               <font>
                                   <Font size="14.0" />
