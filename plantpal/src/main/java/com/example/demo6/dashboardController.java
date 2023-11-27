@@ -3,6 +3,7 @@ package com.example.demo6;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -41,7 +42,7 @@ public class dashboardController {
     @FXML
     private Button fertilizer;
     @FXML
-    private Button disease;
+    private Button disease,privacy;
     @FXML
     void initialize() {
         username.setText("Default User"); // Set the default username here
@@ -170,7 +171,16 @@ public class dashboardController {
     {
         username = new Label();
     }
-
+    @FXML
+    void privacyBtn(MouseEvent event) throws IOException {
+        Stage newstage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("privacypolicy.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        newstage.setScene(scene);
+        newstage.setResizable(false);
+        newstage.show();
+    }
 
 
 }
