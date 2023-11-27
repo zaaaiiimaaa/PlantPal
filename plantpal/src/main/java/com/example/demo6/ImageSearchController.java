@@ -23,9 +23,10 @@ public class ImageSearchController {
     private VBox imageContainer;
 
     // Specify the path to your image folder
-    private final String imageFolderPath = "src/Dimage";
+
 
     public void searchImages() {
+        final String imageFolderPath = "src/Diseaseimage";
         String searchCriteria = searchField.getText().toLowerCase();  // Convert to lowercase for case-insensitive search
 
         // Clear previous search results
@@ -49,10 +50,54 @@ public class ImageSearchController {
 
                     // Add the ImageView to the container
                     imageContainer.getChildren().add(imageView);
+                    foundMatch=true;
                 }
             }
         }
         if (!foundMatch) {
+            File sorryImageFile = new File(imageFolderPath + "/sorry.png");
+            if (sorryImageFile.exists()) {
+                ImageView defaultImageView = new ImageView(new Image(sorryImageFile.toURI().toString()));
+                defaultImageView.setFitWidth(400); // Set the width to match other images
+                defaultImageView.setPreserveRatio(true);
+                imageContainer.getChildren().add(defaultImageView);
+            } else {
+                System.out.println("Default image 'sorry.png' not found.");
+            }
+        }
+    }
+    public void symimage()
+    {
+        final String imageFolderPath = "src/Symptomimage";
+        String searchCriteria = searchField.getText().toLowerCase();  // Convert to lowercase for case-insensitive search
+
+        // Clear previous search results
+        imageContainer.getChildren().clear();
+        imageContainer.setSpacing(30);
+
+        // List to store matching images
+        List<Image> matchingImages = new ArrayList<>();
+
+        File folder = new File(imageFolderPath);
+        File[] imageFiles = folder.listFiles();
+        boolean foundMatc=false;
+        if (imageFiles != null) {
+            for (File imageFile : imageFiles) {
+                String imageName = imageFile.getName().toLowerCase();  // Convert to lowercase for case-insensitive search
+                if (imageName.contains(searchCriteria)) {
+                    // Create an ImageView to display the image
+                    ImageView imageView = new ImageView(new Image(imageFile.toURI().toString()));
+                    imageView.setFitWidth(400);  // Set the width to your desired size
+                    imageView.setPreserveRatio(true);
+
+                    // Add the ImageView to the container
+                    imageContainer.getChildren().add(imageView);
+                    foundMatc=true;
+
+                }
+            }
+        }
+        if (!foundMatc) {
             File sorryImageFile = new File(imageFolderPath + "/sorry.png");
             if (sorryImageFile.exists()) {
                 ImageView defaultImageView = new ImageView(new Image(sorryImageFile.toURI().toString()));

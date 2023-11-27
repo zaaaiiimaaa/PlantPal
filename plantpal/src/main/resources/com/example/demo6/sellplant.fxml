@@ -145,6 +145,11 @@
                         <Font name="Comic Sans MS Bold" size="15.0" />
                      </font>
                   </Button>
+                  <Button fx:id="delete1" layoutX="1021.0" layoutY="153.0" mnemonicParsing="false" onMouseClicked="#handleactionevent" style="-fx-background-color: #7ca76f;" text="Delete" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                  </Button>
                     </children>
                 </AnchorPane>
             </children>

@@ -71,6 +71,14 @@ public class loginController {
        e=new myGardenController();
        e.setuser(u);
 
+       sellplantController s;
+       s=new sellplantController();
+       s.setuser(u);
+
+       PopupController pi;
+       pi=new PopupController();
+       pi.setuser(u);
+
      // myGardenController e=fxmlLoader.getController();
 
 

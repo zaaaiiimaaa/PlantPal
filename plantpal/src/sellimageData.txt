@@ -6,3 +6,4 @@ zaima , ahsdkjkds , 100 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\se
 nabiha , addsalk , 100 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700802595738.png , 123456
 
 Progga , Human , 500 ,C:\Users\ASUS\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700868046240.png , 57
+Poddo , This is a flower , 300 ,C:\Users\ASUS\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1701086398678.jpg , 01720298784

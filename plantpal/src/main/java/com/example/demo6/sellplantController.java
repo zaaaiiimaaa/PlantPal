@@ -2,6 +2,7 @@ package com.example.demo6;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -51,13 +52,28 @@ public class sellplantController {
 
     private String imageDirectoryPath="C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimage\\";
 
+    static String us;
+    public void setuser(String user)
+    {
 
+        us = user;
+        // System.out.println(u);
+    }
     @FXML
     void logoBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) logo.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
+    }
+    @FXML
+    void handleactionevent(MouseEvent event) throws IOException {
+        Stage newstage = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sellpopup.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        newstage.setScene(scene);
+        newstage.show();
     }
     @FXML
     void logoutBtn(MouseEvent event) throws IOException {
@@ -128,7 +144,7 @@ public class sellplantController {
             imageView.setImage(new Image("file:" + destinationPath));
 
             // Save the image path and textfield content to a text file
-            saveToTextFile( textField.getText(),des.getText(),pr.getText(),destinationPath,contact.getText());
+            saveToTextFile( us,textField.getText(),des.getText(),pr.getText(),destinationPath,contact.getText());
         }
     }
 
@@ -140,9 +156,9 @@ public class sellplantController {
         return "";
     }
 
-    private void saveToTextFile(String text,String desc,String prc, String imagePath, String textFieldContent) throws IOException {
+    private void saveToTextFile(String te,String text,String desc,String prc, String imagePath, String textFieldContent) throws IOException {
         try (FileWriter fileWriter = new FileWriter("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt", true)) {
-            fileWriter.write( text+" , "+desc+" , "+prc+" ,"+imagePath  +" , "+ textFieldContent + "\n");
+            fileWriter.write( te+" , "+text+" , "+desc+" , "+prc+" ,"+imagePath  +" , "+ textFieldContent + "\n");
         }
     }
 }

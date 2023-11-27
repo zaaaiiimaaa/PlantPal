@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="205.0" prefWidth="335.0" style="-fx-background-color: #fff4eb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.PopupController">
+    <children>
+        <TextField fx:id="plantname" layoutX="93.0" layoutY="83.0" promptText="Plant_Name" />
+        <Button fx:id="okbtn" layoutX="151.0" layoutY="146.0" mnemonicParsing="false" onAction="#onOkButtonPressed" style="-fx-background-color: #b67f56;" text="OK" textFill="WHITE" />
+      <Label fx:id="plantlabel" layoutX="100.0" layoutY="118.0" text="Label" visible="false" />
+    </children>
+</AnchorPane>
