@@ -84,15 +84,6 @@
                         <Font size="14.0" />
                     </font>
                 </Button>
-                <Button fx:id="mypro" layoutX="1126.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#myproBtn" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #f8f7f2;">
-                    <graphic>
-                        <ImageView fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../../Image/userrr.png" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
             <ImageView fitHeight="458.0" fitWidth="357.0" layoutX="908.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../Image/mygarden.png" />

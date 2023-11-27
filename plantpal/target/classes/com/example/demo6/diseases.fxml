@@ -85,15 +85,6 @@
                 <AnchorPane layoutX="258.0" prefHeight="790.0" prefWidth="1282.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
                     <children>
                         <TextField fx:id="searchField" layoutX="70.0" layoutY="54.0" prefHeight="38.0" prefWidth="741.0" promptText="🔍   Search" style="-fx-background-color: #f8f7f2; -fx-background-radius: 20; -fx-border-color: #795c32; -fx-border-radius: 20;" />
-                        <Button layoutX="1126.0" layoutY="21.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="52.0" style="-fx-background-color: #f8f7f2;">
-                            <graphic>
-                                <ImageView fitHeight="44.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../../Image/userrr.png" />
-                                    </image>
-                                </ImageView>
-                            </graphic>
-                        </Button>
                         <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
                             <font>
                                 <Font size="14.0" />

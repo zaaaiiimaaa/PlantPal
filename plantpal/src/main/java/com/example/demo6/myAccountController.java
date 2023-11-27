@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class myAccountController {
+public class myAccountController extends editprofileController {
 
     public Label email;
     public Label username;
@@ -46,6 +46,7 @@ public class myAccountController {
     }
     @FXML
     void editproBtn(MouseEvent event) throws IOException {
+        setCurrentUser(username.getText());
         Stage stage = (Stage) editpro.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("editprofile.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
