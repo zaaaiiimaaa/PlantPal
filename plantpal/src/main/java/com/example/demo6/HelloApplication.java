@@ -26,7 +26,7 @@ public class HelloApplication extends Application {
         // Load the GUI
         Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
         Scene scene = new Scene(root, 600, 400);
-        stage.setTitle("WELCOME!");
+        stage.setTitle("PlantPal");
         stage.setResizable(false);
         stage.setScene(scene);
 
