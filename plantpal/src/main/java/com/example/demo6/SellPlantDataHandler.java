@@ -7,7 +7,7 @@ import java.util.List;
 
 public class SellPlantDataHandler extends PlantDataHandler {
 
-    private static final String DATA_FILE = "src/sellimageData.txt";
+    private static final String DATA_FILE = "C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt";
 
     @Override
     public boolean searchPlantData(String username, String plantName) {

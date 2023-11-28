@@ -29,7 +29,7 @@ public class EmailJob implements Job {
 
     private List<String> getEmailAddresses() throws IOException {
         List<String> emailAddresses = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");

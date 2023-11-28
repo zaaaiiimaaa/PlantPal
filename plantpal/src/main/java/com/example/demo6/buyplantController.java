@@ -103,7 +103,7 @@ public class buyplantController {
     }
 
     private void loadPlantsFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] plantData = line.split(",");

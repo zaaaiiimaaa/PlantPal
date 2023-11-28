@@ -14,13 +14,13 @@
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff4eb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.loginController">
     <left>
         <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="center">
-            <children>
-                <ImageView fitHeight="400.0" fitWidth="239.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../Image/Untitled design (10).png" />
-                    </image>
-                </ImageView>
-            </children>
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="278.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Image/Untitled%20design%20(10)uo.png" />
+               </image>
+            </ImageView>
+         </children>
         </AnchorPane>
     </left>
     <right>

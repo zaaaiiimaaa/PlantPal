@@ -95,7 +95,7 @@ public class dashboardController {
     private void findUserEmail(String user)
     {
         System.out.println(user);
-        try(BufferedReader reader=new BufferedReader(new FileReader("src/AllUsers.txt")))
+        try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt")))
         {
             String line;
             while((line=reader.readLine())!=null)

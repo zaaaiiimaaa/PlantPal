@@ -12,7 +12,7 @@
          <font>
             <Font size="19.0" />
          </font></TextField>
-        <Button fx:id="okbtn" layoutX="173.0" layoutY="151.0" mnemonicParsing="false" onAction="#onOkButtonPressed" prefHeight="26.0" prefWidth="70.0" styleClass="sendotp" stylesheets="@style.css" text="OK" textFill="WHITE">
+        <Button fx:id="okbtn" layoutX="173.0" layoutY="151.0" mnemonicParsing="false" onAction="#okload" prefHeight="26.0" prefWidth="70.0" styleClass="sendotp" stylesheets="@style.css" text="OK" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font></Button>

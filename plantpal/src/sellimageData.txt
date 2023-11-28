@@ -1,5 +1,5 @@
 zaimaa1 , hibiscus , the plant is potted and yellow , 22 ,C:\GitHub\PlantPal\plantpal\src\sellimage\image_1701195754179.jpeg , 555735
-
 zaimaa1 , Rose plant , The plant disease free and pink , 22 ,C:\GitHub\PlantPal\plantpal\src\sellimage\image_1701195952128.jpeg , 12345
 zaimaa1 , Lemon tree , This is a hybrid lemon plant and the lemon tastes extremely sour , 23 ,C:\GitHub\PlantPal\plantpal\src\sellimage\image_1701196054181.jpeg , 555735
 zaimaa1 , Money Plant , This is a small money plant , 12 ,C:\GitHub\PlantPal\plantpal\src\sellimage\image_1701196567544.jpeg , 555735
+progga , rose , asdfagwr , 12 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1701204981134.png , 12412

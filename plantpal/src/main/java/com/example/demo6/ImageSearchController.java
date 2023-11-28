@@ -15,7 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-public class ImageSearchController {
+public class ImageSearchController implements ImageSearchable{
     @FXML
     private TextField searchField;
 
@@ -23,10 +23,10 @@ public class ImageSearchController {
     private VBox imageContainer;
 
     // Specify the path to your image folder
-
+    @Override
 
     public void searchImages() {
-        final String imageFolderPath = "src/Diseaseimage";
+        final String imageFolderPath = "C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\Diseaseimage";
         String searchCriteria = searchField.getText().toLowerCase();  // Convert to lowercase for case-insensitive search
 
         // Clear previous search results
@@ -68,7 +68,7 @@ public class ImageSearchController {
     }
     public void symimage()
     {
-        final String imageFolderPath = "src/Symptomimage";
+        final String imageFolderPath = "C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\Symptomimage";
         String searchCriteria = searchField.getText().toLowerCase();  // Convert to lowercase for case-insensitive search
 
         // Clear previous search results
