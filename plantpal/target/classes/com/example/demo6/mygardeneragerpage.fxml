@@ -118,7 +118,7 @@
                   </AnchorPane>
               </content>
             </ScrollPane>
-            <ImageView fx:id="profilePictureImageView" fitHeight="150.0" fitWidth="200.0" layoutX="970.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="profilePictureImageView" fitHeight="131.0" fitWidth="182.0" layoutX="979.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" />
             </children>
         </AnchorPane>
     </children>

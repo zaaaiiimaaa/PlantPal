@@ -1,6 +1,7 @@
 package com.example.demo6;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,6 +11,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import java.net.URI;
+import java.awt.Desktop;
+import java.net.URISyntaxException;
+
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -190,6 +195,35 @@ public class dashboardController {
         newstage.setResizable(false);
         newstage.show();
     }
+    @FXML
+    private void openFeedBackForm(ActionEvent event) {
+        String feedbackFormUrl = "https://forms.gle/UENU95HkQmXxVFpZ6";
 
+        try {
+            Desktop.getDesktop().browse(new URI(feedbackFormUrl));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    private void openfacebook(ActionEvent event) {
+        String feedbackFormUrl = "https://www.facebook.com/profile.php?id=61554009960574";
+
+        try {
+            Desktop.getDesktop().browse(new URI(feedbackFormUrl));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    private void openinsta(ActionEvent event) {
+        String feedbackFormUrl = "https://instagram.com/plantpalcommunity?igshid=NzZlODBkYWE4Ng==";
+
+        try {
+            Desktop.getDesktop().browse(new URI(feedbackFormUrl));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

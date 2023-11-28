@@ -156,7 +156,8 @@ public class buyplantController {
         mobileNumberLabel.setAlignment(Pos.CENTER);
 
         ImageView imageView = new ImageView(new Image("file:" + plant.getImagePath()));
-        imageView.setFitHeight(200);
+        imageView.setFitHeight(400);
+        imageView.setFitWidth(400);
         imageView.setPreserveRatio(true);
         StackPane imageContainer = new StackPane(imageView);
         imageContainer.setAlignment(Pos.CENTER);
