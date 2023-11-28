@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -74,16 +74,11 @@
             </children></AnchorPane>
         <AnchorPane layoutX="260.0" prefHeight="790.0" prefWidth="1282.0">
             <children>
-                <AnchorPane prefHeight="790.0" prefWidth="1282.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
+                <AnchorPane prefHeight="777.0" prefWidth="1282.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
                     <children>
-                        <TextField layoutX="44.0" layoutY="28.0" prefHeight="34.0" prefWidth="854.0" promptText="🔍   Search" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25; -fx-border-color: #795c32; -fx-border-radius: 25;">
-                            <font>
-                                <Font size="15.0" />
-                            </font>
-                        </TextField>
-                        <AnchorPane layoutX="897.0" layoutY="72.0" prefHeight="728.0" prefWidth="336.0">
+                        <AnchorPane layoutX="897.0" layoutY="72.0" prefHeight="718.0" prefWidth="336.0">
                             <children>
-                                <AnchorPane layoutX="17.0" layoutY="10.0" prefHeight="698.0" prefWidth="318.0" style="-fx-background-radius: 25; -fx-background-color: #fff4bf; -fx-border-width: 22;">
+                                <AnchorPane layoutX="17.0" layoutY="10.0" prefHeight="680.0" prefWidth="318.0" style="-fx-background-radius: 25; -fx-background-color: #fff4bf; -fx-border-width: 22;">
                                     <children>
                               <ImageView fitHeight="159.0" fitWidth="182.0" layoutX="109.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -138,7 +133,7 @@
                            <image>
                               <Image url="@../../../Image/privacy.gif" />
                            </image></ImageView>
-                        <Button fx:id="privacy1" layoutX="12.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
+                        <Button fx:id="privacy1" layoutX="12.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0" text="Privacy Policy">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -147,20 +142,17 @@
                         </AnchorPane>
                         <AnchorPane layoutX="97.0" layoutY="535.0" prefHeight="200.0" prefWidth="262.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #7ca76f;">
                             <children>
-                                <ImageView fitHeight="150.0" fitWidth="208.0" layoutX="29.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <!--                              <Image url="C:\Java Project\dashboard\src\imagee\hehe.png" />-->
-                                    </image>
-                                </ImageView>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fitHeight="118.0" fitWidth="115.0" layoutX="72.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="118.0" fitWidth="115.0" layoutX="74.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../Image/insta.gif" />
                            </image></ImageView>
-                        <Button fx:id="privacy" layoutX="12.0" layoutY="157.0" mnemonicParsing="false" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
+                        <Button fx:id="insta" layoutX="12.0" layoutY="157.0" mnemonicParsing="false" onAction="#openInsta" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
                            <font>
                               <Font size="15.0" />
                            </font>
+                           <graphic>
+                              <Hyperlink text="Hyperlink" />
+                           </graphic>
                         </Button>
                             </children>
                         </AnchorPane>
@@ -175,10 +167,13 @@
                            <image>
                               <Image url="@../../../Image/googleform.png" />
                            </image></ImageView>
-                        <Button fx:id="privacy2" layoutX="11.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
+                        <Button fx:id="feedback" layoutX="11.0" layoutY="156.0" mnemonicParsing="false" onAction="#openFeedBackForm" prefHeight="20.0" prefWidth="238.0">
                            <font>
                               <Font size="15.0" />
                            </font>
+                           <graphic>
+                              <Hyperlink text="Hyperlink" />
+                           </graphic>
                         </Button>
                             </children>
                         </AnchorPane>
@@ -193,10 +188,13 @@
                            <image>
                               <Image url="@../../../Image/facebook.gif" />
                            </image></ImageView>
-                        <Button fx:id="privacy3" layoutX="14.0" layoutY="158.0" mnemonicParsing="false" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
+                        <Button fx:id="facebook" layoutX="14.0" layoutY="158.0" mnemonicParsing="false" onAction="#openFacebook" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
                            <font>
                               <Font size="15.0" />
                            </font>
+                           <graphic>
+                              <Hyperlink text="Hyperlink" />
+                           </graphic>
                         </Button>
                             </children>
                         </AnchorPane>

@@ -133,9 +133,9 @@
                            <image>
                               <Image url="@../../../Image/privacy.gif" />
                            </image></ImageView>
-                        <Button fx:id="privacy1" layoutX="12.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
+                        <Button fx:id="privacy1" layoutX="12.0" layoutY="156.0" mnemonicParsing="false" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0" style="-fx-background-color: #f8f7f2; -fx-border-radius: 20;" styleClass="upshow" stylesheets="@style.css" text="Privacy Policy">
                            <font>
-                              <Font size="15.0" />
+                              <Font name="System Bold" size="15.0" />
                            </font>
                         </Button>
                             </children>
@@ -146,7 +146,7 @@
                            <image>
                               <Image url="@../../../Image/insta.gif" />
                            </image></ImageView>
-                        <Button layoutX="12.0" layoutY="157.0" mnemonicParsing="false" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
+                        <Button fx:id="insta" layoutX="12.0" layoutY="157.0" mnemonicParsing="false" onAction="#openInsta" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -167,7 +167,7 @@
                            <image>
                               <Image url="@../../../Image/googleform.png" />
                            </image></ImageView>
-                        <Button layoutX="11.0" layoutY="156.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="238.0">
+                        <Button fx:id="feedback" layoutX="11.0" layoutY="156.0" mnemonicParsing="false" onAction="#openFeedBackForm" prefHeight="20.0" prefWidth="238.0" style="-fx-background-color: #f8f7f2; -fx-border-radius: 10;" stylesheets="@style.css">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -188,7 +188,7 @@
                            <image>
                               <Image url="@../../../Image/facebook.gif" />
                            </image></ImageView>
-                        <Button layoutX="14.0" layoutY="158.0" mnemonicParsing="false" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
+                        <Button fx:id="facebook" layoutX="14.0" layoutY="158.0" mnemonicParsing="false" onAction="#openFacebook" onMouseClicked="#privacyBtn" prefHeight="20.0" prefWidth="238.0">
                            <font>
                               <Font size="15.0" />
                            </font>

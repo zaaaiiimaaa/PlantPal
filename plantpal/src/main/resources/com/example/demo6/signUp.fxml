@@ -32,24 +32,27 @@
                </font>
             </Label>
             <Label fx:id="myname" layoutX="31.0" layoutY="85.0" text="Full Name" textFill="#865e43" />
-            <Label fx:id="myemail" layoutX="32.0" layoutY="126.0" text="Email" textFill="#865e43" />
-            <Label fx:id="myusername" layoutX="31.0" layoutY="178.0" text="Username" textFill="#865e43" />
-            <Label fx:id="mynumber" layoutX="31.0" layoutY="229.0" prefHeight="19.0" prefWidth="92.0" text="Phone Number" textFill="#865e43" />
-            <Label fx:id="mypass" layoutX="33.0" layoutY="263.0" text="Password" textFill="#865e43" />
-            <Label fx:id="myrepass" layoutX="32.0" layoutY="297.0" text="Repeat Password" textFill="#865e43" />
-            <CheckBox layoutX="33.0" layoutY="329.0" mnemonicParsing="false" text="I agree to the term of user" />
-            <PasswordField fx:id="PasswordField" layoutX="127.0" layoutY="259.0" />
+            <Label fx:id="myemail" layoutX="32.0" layoutY="117.0" text="Email" textFill="#865e43" />
+            <Label fx:id="myusername" layoutX="31.0" layoutY="169.0" text="Username" textFill="#865e43" />
+            <Label fx:id="mynumber" layoutX="31.0" layoutY="219.0" prefHeight="19.0" prefWidth="92.0" text="Phone Number" textFill="#865e43" />
+            <Label fx:id="mypass" layoutX="35.0" layoutY="254.0" text="Password" textFill="#865e43" />
+            <Label fx:id="myrepass" layoutX="32.0" layoutY="288.0" text="Repeat Password" textFill="#865e43" />
+            <CheckBox layoutX="32.0" layoutY="338.0" mnemonicParsing="false" text="I agree to the term of user" />
+            <PasswordField fx:id="PasswordField" layoutX="128.0" layoutY="250.0" />
             <Button fx:id="signIn" layoutX="132.0" layoutY="356.0" mnemonicParsing="false" onMouseClicked="#signInBtn" style="-fx-background-color: #fff4eb; -fx-border-radius: 12;" styleClass="forpass" stylesheets="@style.css" text="Sign Up" textFill="#764747" underline="true">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>
             <TextField fx:id="FullnameField" layoutX="127.0" layoutY="81.0" promptText="Name" />
-            <TextField fx:id="Emailfield" layoutX="127.0" layoutY="122.0" promptText="Email address" />
-            <TextField fx:id="UsernameField" layoutX="128.0" layoutY="174.0" promptText="Username" />
-            <TextField fx:id="NumberField" layoutX="127.0" layoutY="226.0" promptText="Number" />
-            <PasswordField fx:id="RepeatField" layoutX="128.0" layoutY="293.0" />
+            <TextField fx:id="Emailfield" layoutX="127.0" layoutY="113.0" promptText="Email address" />
+            <TextField fx:id="UsernameField" layoutX="128.0" layoutY="165.0" promptText="Username" />
+            <TextField fx:id="NumberField" layoutX="128.0" layoutY="216.0" promptText="Number" />
+            <PasswordField fx:id="RepeatField" layoutX="128.0" layoutY="284.0" />
             <Label fx:id="usernameex" layoutX="128.0" layoutY="200.0" text="Label" visible="false" />
             <Label fx:id="emailex" layoutX="128.0" layoutY="147.0" text="Label" visible="false" />
+            <Label fx:id="passwordex" layoutX="137.0" layoutY="310.0" prefHeight="34.0" prefWidth="134.0" textAlignment="CENTER" textFill="#dc1313" wrapText="true" />
+            <Label fx:id="usernameex" layoutX="127.0" layoutY="191.0" prefHeight="18.0" prefWidth="150.0" textFill="#dc1313" />
+            <Label fx:id="emailex" layoutX="113.0" layoutY="138.0" prefHeight="18.0" prefWidth="180.0" textFill="#dc1313" />
          </children>
       </AnchorPane>
    </right>

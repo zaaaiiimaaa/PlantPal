@@ -50,7 +50,8 @@ public class signupController {
     private Label usernameex;
     @FXML
     private Label emailex;
-
+@FXML
+    private Label passwordex;
 
     @FXML
     void signInBtn(MouseEvent event) throws IOException {
@@ -77,6 +78,13 @@ public class signupController {
                 hasError = true;
             } else {
                 usernameex.setVisible(false); // Hide if no error
+            }
+            if (!isPasswordValid(pass)) {
+                passwordex.setText("Password must be at least 8 characters");
+                passwordex.setVisible(true);
+                hasError = true;
+            } else {
+                passwordex.setVisible(false);
             }
 
             if (hasError) {
@@ -142,6 +150,9 @@ public class signupController {
             return false;
         }
         return pattern.matcher(email).matches();
+    }
+    private boolean isPasswordValid(String password) {
+        return password != null && password.length() >= 8;
     }
 
 }
