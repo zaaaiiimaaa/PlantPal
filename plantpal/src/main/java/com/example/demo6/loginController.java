@@ -1,15 +1,13 @@
 package com.example.demo6;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import javafx.scene.control.TextField;
-import javafx.scene.control.PasswordField;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -35,7 +33,11 @@ public class loginController {
     @FXML
     private Label passwordex;
     @FXML
-            private Button userpro;
+    private Button userpro;
+    @FXML
+    private TextField plaintextField;
+    @FXML
+    private RadioButton showPassword;
 
     String u;
     String p;
@@ -152,5 +154,23 @@ public class loginController {
         stage.centerOnScreen();
         stage.show();
     }
+    @FXML
+    public void toggleShowPassword(ActionEvent event) {
+        if (showPassword.isSelected()) {
+            // When the radio button is selected, show the plain text and hide the password field
+            plaintextField.setText(mypassword.getText());
+            plaintextField.setVisible(true);
+            plaintextField.setManaged(true);
+            mypassword.setVisible(false);
+            mypassword.setManaged(false);
+        } else {
+            // When the radio button is deselected, show the password field and hide the plain text
+            mypassword.setText(plaintextField.getText());
+            mypassword.setVisible(true);
+            mypassword.setManaged(true);
 
+            plaintextField.setVisible(false);
+            plaintextField.setManaged(false);
+        }
+    }
 }

@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -25,12 +26,13 @@
     <right>
         <AnchorPane prefHeight="400.0" prefWidth="343.0" BorderPane.alignment="CENTER">
             <children>
-                <Label layoutX="38.0" layoutY="203.0" prefHeight="33.0" prefWidth="92.0" text="Username" textFill="#865e43">
+            <TextField fx:id="plaintextField" layoutX="149.0" layoutY="233.0" />
+                <Label layoutX="38.0" layoutY="186.0" prefHeight="33.0" prefWidth="92.0" text="Username" textFill="#865e43">
                     <font>
                         <Font name="Berlin Sans FB Bold" size="19.0" />
                     </font>
                 </Label>
-                <Label layoutX="38.0" layoutY="246.0" prefHeight="33.0" prefWidth="92.0" text="Password" textFill="#865e43">
+                <Label layoutX="38.0" layoutY="229.0" prefHeight="33.0" prefWidth="92.0" text="Password" textFill="#865e43">
                     <font>
                         <Font name="Berlin Sans FB Bold" size="19.0" />
                     </font>
@@ -42,21 +44,22 @@
                         <!--                  <Image url="@/Image/Untitled design (8)hehe.png" />-->
                     </image>
                 </ImageView>
-                <TextField fx:id="myusername" layoutX="147.0" layoutY="207.0" promptText="Username" />
-                <PasswordField fx:id="mypassword" layoutX="147.0" layoutY="250.0" promptText="Password" />
+                <TextField fx:id="myusername" layoutX="149.0" layoutY="190.0" promptText="Username" />
                 <Button fx:id="signup" layoutX="258.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#signupBtn" style="-fx-background-color: #fff4eb; -fx-border-radius: 10;" styleClass="forpass" stylesheets="@style.css" text="Sign up" textFill="#1d0404" />
+                <PasswordField fx:id="mypassword" layoutX="149.0" layoutY="233.0" promptText="Password" />
                 <Button fx:id="forpass" layoutX="167.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#forpassbtn" style="-fx-background-color: #fff4eb; -fx-border-radius: 10;" styleClass="forpass" stylesheets="@style.css" text="Forgot Password?" />
                 <ImageView fitHeight="167.0" fitWidth="164.0" layoutX="176.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../../Image/Untitled design (4)hehe.png" />
                     </image>
                 </ImageView>
-                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-40.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-40.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../../Image/Planal (2)he.png" />
                     </image>
                 </ImageView>
             <Label fx:id="passwordex" layoutX="146.0" layoutY="279.0" text="Label" visible="false" />
+            <RadioButton fx:id="showPassword" layoutX="155.0" layoutY="270.0" mnemonicParsing="false" onAction="#toggleShowPassword" text="Show Password" />
             </children>
         </AnchorPane>
     </right>
