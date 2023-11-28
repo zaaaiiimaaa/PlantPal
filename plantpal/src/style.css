@@ -1,0 +1,18 @@
+.myGarden {
+    -fx-background-color: #7ca76f;
+
+}
+
+.myGarden:hover {
+    -fx-background-color: #98BF64;
+
+}
+.logout {
+    -fx-background-color:  #f8f7f2;
+
+}
+
+.logout:hover {
+    -fx-background-color:  #fff4bf;
+
+}

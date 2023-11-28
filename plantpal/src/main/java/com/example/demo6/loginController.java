@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.PasswordField;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import com.example.demo6.myGardenController;
@@ -91,6 +92,8 @@ public class loginController {
                Stage stage = (Stage) login.getScene().getWindow();
                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
                Scene scene = new Scene(fxmlLoader.load());
+               File cssFile = new File("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\style.css");
+               scene.getStylesheets().add(cssFile.toURI().toURL().toExternalForm());
                stage.setScene(scene);
                stage.centerOnScreen();
                stage.show();
@@ -107,7 +110,7 @@ public class loginController {
    }
     private String find(String u)
     {
-        try(BufferedReader reader=new BufferedReader(new FileReader("src/AllUsers.txt")))
+        try(BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt")))
         {
             String line;
             while((line=reader.readLine())!=null)

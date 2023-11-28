@@ -120,7 +120,7 @@ public class myGardenController {
             String imageFileName = username + "_image_" + uniqueIdentifier + getFileExtension(selectedFile.getName());
 
             // Define the directory path where the images are stored
-            String imageDirectoryPath = "C:\\GitHub\\PlantPal\\plantpal\\src\\User_Garden\\";
+            String imageDirectoryPath = "C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\User_Garden\\";
 
             // Combine the directory path and filename to get the full path of the destination file
             String destinationPath = imageDirectoryPath + imageFileName;
@@ -162,7 +162,7 @@ public class myGardenController {
     private HBox imageContainer;
     @FXML
     private ScrollPane myScrollPane;
-    private final String imageFolderPath = "C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\User_Garden";
+    private final String imageFolderPath = "C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\User_Garden\\";
     public void searchImages() {
         //String searchCriteria = searchField.getText().toLowerCase();  // Convert to lowercase for case-insensitive search
         String searchCriteria=username.toLowerCase();
