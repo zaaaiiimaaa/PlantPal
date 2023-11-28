@@ -98,7 +98,7 @@ public class buyplantController {
     }
 
     private void loadPlantsFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\ASUS\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] plantData = line.split(",");
@@ -107,11 +107,11 @@ public class buyplantController {
                     continue;
                 }
                 Plant plant = new Plant(
-                        plantData[0], // Name
-                        plantData[1], // Description
-                        Double.parseDouble(plantData[2]), // Price
-                        plantData[3], // Image Path
-                        plantData[4]  // Mobile Number
+                        plantData[1], // Name
+                        plantData[2], // Description
+                        Double.parseDouble(plantData[3]), // Price
+                        plantData[4], // Image Path
+                        plantData[5]  // Mobile Number
                 );
                 plantsForSale.add(plant);
             }

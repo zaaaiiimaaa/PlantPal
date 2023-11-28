@@ -1,9 +1,2 @@
-Patabahar , This is a Flower , 4 , src/sellimage/image_1700799205983.jpg , 12345678
-Kukur , this is a animal , 76.00 , src/sellimage/image_1700799512286.jpg , 01720298784
-hibiscus , njaksjk , 12 , src/sellimage/image_1700800881706.png , 12345678
-Progga , human , 100 , C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage/image_1700802312780.png , 123456
-zaima , ahsdkjkds , 100 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700802374642.png, 1234567
-nabiha , addsalk , 100 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700802595738.png , 123456
-
-Progga , Human , 500 ,C:\Users\ASUS\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1700868046240.png , 57
-Poddo , This is a flower , 300 ,C:\Users\ASUS\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1701086398678.jpg , 01720298784
+nabiha45 , hibiscus , asdfbg , 123 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1701138579804.png , 123
+nabiha45 , cactus , sadfg , 12345 ,C:\Users\User\Documents\GitHub\PlantPal\plantpal\src\sellimage\image_1701138845625.png , 12345

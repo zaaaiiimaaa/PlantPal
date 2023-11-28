@@ -50,7 +50,7 @@ public class sellplantController {
     @FXML
     private ImageView imageView;
 
-    private String imageDirectoryPath="C:\\GitHub\\PlantPal\\plantpal\\src\\sellimage\\";
+    private String imageDirectoryPath="C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimage\\";
 
     static String us;
     public void setuser(String user)
@@ -158,7 +158,7 @@ public class sellplantController {
     }
 
     private void saveToTextFile(String te,String text,String desc,String prc, String imagePath, String textFieldContent) throws IOException {
-        try (FileWriter fileWriter = new FileWriter("src/sellimageData.txt", true)) {
+        try (FileWriter fileWriter = new FileWriter("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt", true)) {
             fileWriter.write( te+" , "+text+" , "+desc+" , "+prc+" ,"+imagePath  +" , "+ textFieldContent + "\n");
         }
     }
