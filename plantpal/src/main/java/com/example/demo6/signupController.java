@@ -113,6 +113,7 @@ public class signupController {
             Stage stage = (Stage) signIn.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("signsuccess.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
+            scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
             stage.setScene(scene);
 
         }

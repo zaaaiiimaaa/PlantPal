@@ -50,7 +50,7 @@ public class sellplantController {
     @FXML
     private ImageView imageView;
 
-    private String imageDirectoryPath="C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimage\\";
+    private String imageDirectoryPath="C:\\GitHub\\PlantPal\\plantpal\\src\\sellimage\\";
 
     static String us;
     public void setuser(String user)
@@ -64,6 +64,7 @@ public class sellplantController {
         Stage stage = (Stage) logo.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -72,6 +73,7 @@ public class sellplantController {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sellpopup.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         newstage.setScene(scene);
         newstage.setResizable(false);
         newstage.show();
@@ -81,6 +83,7 @@ public class sellplantController {
         Stage stage = (Stage) logout.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -88,6 +91,7 @@ public class sellplantController {
         Stage stage = (Stage) fertilizer.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fertilizer.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -95,6 +99,7 @@ public class sellplantController {
         Stage stage = (Stage) disease.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("diseases.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -102,6 +107,7 @@ public class sellplantController {
         Stage stage = (Stage) buyplant.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("buyplant.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -109,6 +115,7 @@ public class sellplantController {
         Stage stage = (Stage) myGarden.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("mygardeneragerpage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -116,6 +123,7 @@ public class sellplantController {
         Stage stage = (Stage) about.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("aboutus.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -123,6 +131,7 @@ public class sellplantController {
         Stage stage = (Stage) about.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sellplant.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
 
@@ -158,7 +167,7 @@ public class sellplantController {
     }
 
     private void saveToTextFile(String te,String text,String desc,String prc, String imagePath, String textFieldContent) throws IOException {
-        try (FileWriter fileWriter = new FileWriter("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt", true)) {
+        try (FileWriter fileWriter = new FileWriter("C:\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt", true)) {
             fileWriter.write( te+" , "+text+" , "+desc+" , "+prc+" ,"+imagePath  +" , "+ textFieldContent + "\n");
         }
     }

@@ -4,11 +4,23 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="205.0" prefWidth="335.0" style="-fx-background-color: #fff4eb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.PopupController">
+<AnchorPane prefHeight="248.0" prefWidth="409.0" style="-fx-background-color: #fff4eb;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.PopupController">
     <children>
-        <TextField fx:id="plantname" layoutX="93.0" layoutY="83.0" promptText="Plant_Name" />
-        <Button fx:id="okbtn" layoutX="151.0" layoutY="146.0" mnemonicParsing="false" onAction="#onOkButtonPressed" style="-fx-background-color: #b67f56;" text="OK" textFill="WHITE" />
+        <TextField fx:id="plantname" layoutX="87.0" layoutY="83.0" prefHeight="44.0" prefWidth="235.0" promptText="Plant_Name">
+         <font>
+            <Font size="19.0" />
+         </font></TextField>
+        <Button fx:id="okbtn" layoutX="173.0" layoutY="151.0" mnemonicParsing="false" onAction="#onOkButtonPressed" prefHeight="26.0" prefWidth="70.0" styleClass="sendotp" stylesheets="@style.css" text="OK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
       <Label fx:id="plantlabel" layoutX="100.0" layoutY="118.0" text="Label" visible="false" />
+      <Label layoutX="20.0" layoutY="53.0" text="Enter the plant name of the ad you want to delete">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

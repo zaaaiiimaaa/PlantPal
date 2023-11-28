@@ -42,7 +42,7 @@
                         <Image url="@../../../Image/ded.png" />
                     </image>
                 </ImageView>
-                <Button fx:id="ok" layoutX="346.0" layoutY="264.0" mnemonicParsing="false" onAction="#matchOTP" onMouseClicked="#okBtn" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #b67f56;" text="CONFIRM" textFill="#fffefe">
+                <Button fx:id="ok" layoutX="346.0" layoutY="264.0" mnemonicParsing="false" onAction="#matchOTP" onMouseClicked="#okBtn" prefHeight="30.0" prefWidth="87.0" styleClass="sendotp" stylesheets="@style.css" text="CONFIRM" textFill="#fffefe">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
@@ -57,7 +57,7 @@
                   <Font size="14.0" />
                </font>
             </TextField>
-            <Button layoutX="346.0" layoutY="169.0" mnemonicParsing="false" onAction="#sendotpbutton" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: #b67f56;" text="SEND OTP" textFill="#fffefe">
+            <Button layoutX="346.0" layoutY="169.0" mnemonicParsing="false" onAction="#sendotpbutton" prefHeight="30.0" prefWidth="87.0" styleClass="sendotp" stylesheets="@style.css" text="SEND OTP" textFill="#fffefe">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>

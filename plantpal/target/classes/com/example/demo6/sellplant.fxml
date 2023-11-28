@@ -16,7 +16,7 @@
             <children>
                 <AnchorPane prefHeight="790.0" prefWidth="258.0">
                     <children>
-                        <Button fx:id="logo" layoutX="32.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#logoBtn" prefHeight="165.0" prefWidth="193.0" style="-fx-background-color: #7ca76f;">
+                        <Button fx:id="logo" layoutX="32.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#logoBtn" prefHeight="165.0" prefWidth="193.0" styleClass="myGarden" stylesheets="@style.css">
                             <graphic>
                                 <ImageView fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -30,7 +30,7 @@
                         </Button>
                         <HBox alignment="CENTER" layoutY="215.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button fx:id="myGarden" mnemonicParsing="false" onMouseClicked="#myGardenBtn" style="-fx-background-color: #7CA76F;" text="MY GARDEN" underline="true">
+                                <Button fx:id="myGarden" mnemonicParsing="false" onMouseClicked="#myGardenBtn" styleClass="myGarden" stylesheets="@style.css" text="MY GARDEN" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -39,7 +39,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="435.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" style="-fx-background-color: #7CA76F;" text="DISEASES" underline="true">
+                                <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" styleClass="myGarden" stylesheets="@style.css" text="DISEASES" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -48,7 +48,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="290.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="SELL PLANT" underline="true">
+                                <Button mnemonicParsing="false" styleClass="myGarden" stylesheets="@style.css" text="SELL PLANT" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -57,7 +57,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="365.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button fx:id="buyplant" mnemonicParsing="false" onMouseClicked="#buyplantBtn" style="-fx-background-color: #7CA76F;" text="BUY PLANT" underline="true">
+                                <Button fx:id="buyplant" mnemonicParsing="false" onMouseClicked="#buyplantBtn" styleClass="myGarden" stylesheets="@style.css" text="BUY PLANT" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -66,14 +66,14 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="505.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" style="-fx-background-color: #7CA76F;" text="FERTILIZERS" underline="true">
+                                <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" styleClass="myGarden" stylesheets="@style.css" text="FERTILIZERS" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
                                 </Button>
                             </children>
                         </HBox>
-                        <Button fx:id="about" layoutX="78.0" layoutY="738.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" style="-fx-background-color: #7CA76F;" text="ABOUT US" underline="true">
+                        <Button fx:id="about" layoutX="78.0" layoutY="738.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" styleClass="myGarden" stylesheets="@style.css" text="ABOUT US" underline="true">
                             <font>
                                 <Font size="17.0" />
                             </font>
@@ -82,7 +82,7 @@
                 </AnchorPane>
                 <AnchorPane layoutX="258.0" prefHeight="790.0" prefWidth="1282.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
                     <children>
-                        <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
+                        <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" prefHeight="30.0" prefWidth="78.0" styleClass="logout" stylesheets="@style.css" text="LOG OUT" textFill="#563030" underline="true">
                             <font>
                                 <Font size="14.0" />
                             </font>
@@ -92,7 +92,7 @@
                         <Image url="@../../../Image/shop.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="898.0" layoutY="210.0" text="Set Up an online shop with us!!">
+                  <Label layoutX="909.0" layoutY="123.0" text="Want to delete an old AD?">
                      <font>
                         <Font name="Comic Sans MS Bold" size="21.0" />
                      </font>
@@ -108,7 +108,7 @@
                         <Font name="Comic Sans MS Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Button fx:id="uploadButton" layoutX="406.0" layoutY="653.0" mnemonicParsing="false" onAction="#uploadImage" style="-fx-background-color: #7ca76f;" text="Upload Picture" textFill="WHITE" underline="true">
+                  <Button fx:id="uploadButton" layoutX="406.0" layoutY="653.0" mnemonicParsing="false" onAction="#uploadImage" styleClass="myGarden" stylesheets="@style.css" text="Upload Picture" textFill="WHITE" underline="true">
                      <font>
                         <Font name="Comic Sans MS Bold" size="15.0" />
                      </font>
@@ -131,14 +131,14 @@
                   </Label>
                   <TextField fx:id="des" layoutX="319.0" layoutY="444.0" prefHeight="38.0" prefWidth="299.0" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-border-radius: 20;" />
                   <TextField fx:id="pr" layoutX="319.0" layoutY="502.0" prefHeight="38.0" prefWidth="299.0" style="-fx-background-color: #f8f7f2; -fx-border-color: #795c32; -fx-border-radius: 20;" />
-                  <Button fx:id="donebtn" layoutX="441.0" layoutY="722.0" mnemonicParsing="false" onMouseClicked="#doneBtn" style="-fx-background-color: #7ca76f;" text="Done" textFill="WHITE" underline="true">
+                  <Button fx:id="donebtn" layoutX="441.0" layoutY="722.0" mnemonicParsing="false" onMouseClicked="#doneBtn" styleClass="myGarden" stylesheets="@style.css" text="Done" textFill="WHITE" underline="true">
                      <font>
                         <Font name="Comic Sans MS Bold" size="15.0" />
                      </font>
                   </Button>
-                  <Button fx:id="delete1" layoutX="1021.0" layoutY="153.0" mnemonicParsing="false" onMouseClicked="#handleactionevent" style="-fx-background-color: #7ca76f;" text="Delete" textFill="WHITE" underline="true">
+                  <Button fx:id="delete1" layoutX="986.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#handleactionevent" styleClass="myGarden" stylesheets="@style.css" text="CLICK HERE" textFill="WHITE" underline="true">
                      <font>
-                        <Font name="Comic Sans MS Bold" size="15.0" />
+                        <Font name="Comic Sans MS Bold" size="17.0" />
                      </font>
                   </Button>
                     </children>

@@ -37,9 +37,9 @@
             <Label fx:id="mynumber" layoutX="31.0" layoutY="229.0" prefHeight="19.0" prefWidth="92.0" text="Phone Number" textFill="#865e43" />
             <Label fx:id="mypass" layoutX="33.0" layoutY="263.0" text="Password" textFill="#865e43" />
             <Label fx:id="myrepass" layoutX="32.0" layoutY="297.0" text="Repeat Password" textFill="#865e43" />
-            <CheckBox layoutX="31.0" layoutY="338.0" mnemonicParsing="false" text="I agree to the term of user" />
+            <CheckBox layoutX="33.0" layoutY="329.0" mnemonicParsing="false" text="I agree to the term of user" />
             <PasswordField fx:id="PasswordField" layoutX="127.0" layoutY="259.0" />
-            <Button fx:id="signIn" layoutX="132.0" layoutY="356.0" mnemonicParsing="false" onMouseClicked="#signInBtn" style="-fx-background-color: #fff4eb; -fx-border-radius: 12;" text="Sign Up" textFill="#764747" underline="true">
+            <Button fx:id="signIn" layoutX="132.0" layoutY="356.0" mnemonicParsing="false" onMouseClicked="#signInBtn" style="-fx-background-color: #fff4eb; -fx-border-radius: 12;" styleClass="forpass" stylesheets="@style.css" text="Sign Up" textFill="#764747" underline="true">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>

@@ -24,6 +24,7 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 
 public class forgotpassContoller {
     @FXML
@@ -42,12 +43,14 @@ public class forgotpassContoller {
     private Stage stage;
     @FXML
     private Scene scene;
+    public String otp=generateOTP();
 
     @FXML
     void okBtn(MouseEvent event) throws IOException {
         Stage stage = (Stage) ok.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("resetpass.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
         stage.centerOnScreen();
         stage.show();
@@ -58,7 +61,7 @@ public class forgotpassContoller {
         String email=findUserEmail(username);
         if(email!=null)
         {
-            String message="Hello "+username+" welcome to PlantPal, Here is your OTP 3456";
+            String message="Hello "+username+" welcome to PlantPal, Here is your OTP "+otp;
             String subject="PlantPal confirmation";
             String to=email;
             String from="plantpalcommunity@gmail.com";
@@ -143,13 +146,14 @@ public class forgotpassContoller {
     private  void matchOTP(ActionEvent event) throws IOException
     {
         String givenOTP=otpfield.getText();
-        String OTP="3456";
+        //String OTP="3456";
         String user=usernamefield.getText();
-        if(givenOTP.equals(OTP))
+        if(givenOTP.equals(otp))
         {
             Parent root = FXMLLoader.load(getClass().getResource("resetpass.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
             stage.setScene(scene);
             stage.show();
         }
@@ -204,6 +208,7 @@ public class forgotpassContoller {
                 Parent  root = FXMLLoader.load(getClass().getResource("login.fxml"));
                 stage=(Stage) ((Node)event.getSource()).getScene().getWindow();
                 scene=new Scene(root);
+                scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
                 stage.setScene(scene);
                 stage.show();
             } else {
@@ -215,6 +220,11 @@ public class forgotpassContoller {
 
 
 
+    }
+    private String generateOTP() {
+        Random random = new Random();
+        int otp = 1000 + random.nextInt(9000); // Generates a number between 1000 and 9999
+        return String.valueOf(otp);
     }
 
 

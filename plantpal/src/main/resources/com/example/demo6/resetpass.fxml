@@ -31,9 +31,12 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <Button fx:id="Done" layoutX="262.0" layoutY="313.0" mnemonicParsing="false" onAction="#resetPassword" style="-fx-background-color: #b67f56;" text="Done" textFill="#fbfbfb" />
+      <Button fx:id="Done" layoutX="252.0" layoutY="313.0" mnemonicParsing="false" onAction="#resetPassword" prefHeight="34.0" prefWidth="70.0" styleClass="sendotp" stylesheets="@style.css" text="Done" textFill="#fbfbfb">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
       <TextField fx:id="Reuser" layoutX="180.0" layoutY="99.0" prefHeight="34.0" prefWidth="214.0" />
-      <TextField fx:id="NewPasswordField" layoutX="177.0" layoutY="174.0" prefHeight="34.0" prefWidth="214.0" />
+      <TextField fx:id="NewPasswordField" layoutX="180.0" layoutY="173.0" prefHeight="34.0" prefWidth="214.0" />
       <TextField fx:id="pp" layoutX="177.0" layoutY="250.0" prefHeight="34.0" prefWidth="214.0" />
     </children>
 </AnchorPane>

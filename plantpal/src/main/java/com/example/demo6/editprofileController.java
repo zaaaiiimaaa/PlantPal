@@ -36,6 +36,7 @@ public class editprofileController {
         Stage stage = (Stage) logo.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -126,6 +127,7 @@ public class editprofileController {
         Stage stage = (Stage) mygarden.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("mygardeneragerpage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -133,6 +135,7 @@ public class editprofileController {
         Stage stage = (Stage) fertilizer.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fertilizer.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -140,6 +143,7 @@ public class editprofileController {
         Stage stage = (Stage) disease.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("diseases.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -147,6 +151,7 @@ public class editprofileController {
         Stage stage = (Stage) about.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("aboutus.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
 
@@ -156,6 +161,7 @@ public class editprofileController {
         Stage stage = (Stage) buyplant.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("buyplant.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -163,6 +169,7 @@ public class editprofileController {
         Stage stage = (Stage) sellplant.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sellplant.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
 
@@ -170,6 +177,7 @@ public class editprofileController {
         Stage stage = (Stage) logo.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFile));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
 

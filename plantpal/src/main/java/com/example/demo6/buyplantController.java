@@ -46,6 +46,7 @@ public class buyplantController {
         Stage stage = (Stage) myGarden.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("mygardeneragerpage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -53,6 +54,7 @@ public class buyplantController {
         Stage stage = (Stage) about.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("aboutus.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -60,6 +62,7 @@ public class buyplantController {
         Stage stage = (Stage) fertilizer.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fertilizer.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -75,6 +78,7 @@ public class buyplantController {
         Stage stage = (Stage) disease.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("diseases.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
 
@@ -82,6 +86,7 @@ public class buyplantController {
         Stage stage = (Stage) logout.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxmlFile));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
 
@@ -98,7 +103,7 @@ public class buyplantController {
     }
 
     private void loadPlantsFromFile() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\GitHub\\PlantPal\\plantpal\\src\\sellimageData.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] plantData = line.split(",");

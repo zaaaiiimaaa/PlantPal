@@ -17,7 +17,7 @@
             <children>
                 <AnchorPane prefHeight="790.0" prefWidth="239.0">
                     <children>
-                        <Button fx:id="logo" layoutX="32.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#logoBtn" prefHeight="165.0" prefWidth="193.0" style="-fx-background-color: #7ca76f;">
+                        <Button fx:id="logo" layoutX="32.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#logoBtn" prefHeight="165.0" prefWidth="193.0" styleClass="myGarden" stylesheets="@style.css">
                             <graphic>
                                 <ImageView fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -31,7 +31,7 @@
                         </Button>
                         <HBox alignment="CENTER" layoutY="215.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button fx:id="myGarden" mnemonicParsing="false" onMouseClicked="#myGardenBtn" style="-fx-background-color: #7CA76F;" text="MY GARDEN" underline="true">
+                                <Button fx:id="myGarden" mnemonicParsing="false" onMouseClicked="#myGardenBtn" styleClass="myGarden" stylesheets="@style.css" text="MY GARDEN" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -40,7 +40,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="435.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" style="-fx-background-color: #7CA76F;" text="DISEASES" underline="true">
+                                <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" styleClass="myGarden" stylesheets="@style.css" text="DISEASES" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -49,7 +49,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="290.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button fx:id="sellplant" mnemonicParsing="false" onMouseClicked="#sellplantBtn" style="-fx-background-color: #7CA76F;" text="SELL PLANT" underline="true">
+                                <Button fx:id="sellplant" mnemonicParsing="false" onMouseClicked="#sellplantBtn" styleClass="myGarden" stylesheets="@style.css" text="SELL PLANT" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -58,7 +58,7 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="365.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button mnemonicParsing="false" style="-fx-background-color: #7CA76F;" text="BUY PLANT" underline="true">
+                                <Button mnemonicParsing="false" styleClass="myGarden" stylesheets="@style.css" text="BUY PLANT" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -67,14 +67,14 @@
                         </HBox>
                         <HBox alignment="CENTER" layoutY="505.0" prefHeight="58.0" prefWidth="258.0">
                             <children>
-                                <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" style="-fx-background-color: #7CA76F;" text="FERTILIZERS" underline="true">
+                                <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" styleClass="myGarden" stylesheets="@style.css" text="FERTILIZERS" underline="true">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
                                 </Button>
                             </children>
                         </HBox>
-                        <Button fx:id="about" layoutX="78.0" layoutY="738.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" style="-fx-background-color: #7CA76F;" text="ABOUT US" underline="true">
+                        <Button fx:id="about" layoutX="78.0" layoutY="738.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" styleClass="myGarden" stylesheets="@style.css" text="ABOUT US" underline="true">
                             <font>
                                 <Font size="17.0" />
                             </font>
@@ -83,7 +83,7 @@
                 </AnchorPane>
                 <AnchorPane layoutX="257.0" prefHeight="790.0" prefWidth="1336.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
                     <children>
-                        <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" prefHeight="30.0" prefWidth="78.0" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
+                        <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" prefHeight="30.0" prefWidth="78.0" styleClass="logout" stylesheets="@style.css" text="LOG OUT" textFill="#563030" underline="true">
                             <font>
                                 <Font size="14.0" />
                             </font>
@@ -93,7 +93,7 @@
                                 <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                                     <children>
                                         <TextField fx:id="searchField" prefHeight="38.0" prefWidth="600.0" promptText="🔍   Search Plant" style="-fx-background-color: #f8f7f2; -fx-background-radius: 20; -fx-border-color: #795c32; -fx-border-radius: 20;" />
-                                        <Button fx:id="searchButton" alignment="CENTER" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="33.0" prefWidth="66.0" style="-fx-background-color: #795c32; -fx-border-color: #795c32; -fx-border-radius: 15;" text="Search" textFill="WHITE">
+                                        <Button fx:id="searchButton" alignment="CENTER" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="33.0" prefWidth="66.0" style="-fx-background-radius: 15; -fx-border-radius: 15;" styleClass="search" stylesheets="@style.css" text="Search" textFill="WHITE">
                                             <font>
                                                 <Font name="System Bold" size="13.0" />
                                             </font>

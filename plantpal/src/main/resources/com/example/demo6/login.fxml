@@ -35,7 +35,7 @@
                         <Font name="Berlin Sans FB Bold" size="19.0" />
                     </font>
                 </Label>
-                <Button fx:id="login" layoutX="199.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#loginBtn" style="-fx-background-color: #b67f56;" text="Login" textFill="WHITE" />
+                <Button fx:id="login" layoutX="199.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#loginBtn" styleClass="sendotp" stylesheets="@style.css" text="Login" textFill="WHITE" />
                 <Label layoutX="130.0" layoutY="368.0" text="Don't have an acoount?" underline="true" />
                 <ImageView fitHeight="44.0" fitWidth="90.0" layoutX="222.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -44,8 +44,8 @@
                 </ImageView>
                 <TextField fx:id="myusername" layoutX="147.0" layoutY="207.0" promptText="Username" />
                 <PasswordField fx:id="mypassword" layoutX="147.0" layoutY="250.0" promptText="Password" />
-                <Button fx:id="signup" layoutX="258.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#signupBtn" style="-fx-background-color: #fff4eb;" text="Sign up" textFill="#1d0404" underline="true" />
-                <Button fx:id="forpass" layoutX="167.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#forpassbtn" style="-fx-background-color: #fff4eb;" text="Forgot Password?" underline="true" />
+                <Button fx:id="signup" layoutX="258.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#signupBtn" style="-fx-background-color: #fff4eb; -fx-border-radius: 10;" styleClass="forpass" stylesheets="@style.css" text="Sign up" textFill="#1d0404" />
+                <Button fx:id="forpass" layoutX="167.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#forpassbtn" style="-fx-background-color: #fff4eb; -fx-border-radius: 10;" styleClass="forpass" stylesheets="@style.css" text="Forgot Password?" />
                 <ImageView fitHeight="167.0" fitWidth="164.0" layoutX="176.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../../../Image/Untitled design (4)hehe.png" />

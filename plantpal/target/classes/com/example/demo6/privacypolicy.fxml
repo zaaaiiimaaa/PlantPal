@@ -30,7 +30,7 @@
                 </AnchorPane>
             </content>
         </ScrollPane>
-        <Label layoutX="60.0" layoutY="14.0" text="PRIVACY POLICIES">
+        <Label layoutX="60.0" layoutY="14.0" text="PRIVACY POLICIES" textFill="#693f3f">
             <font>
                 <Font name="System Bold" size="25.0" />
             </font>

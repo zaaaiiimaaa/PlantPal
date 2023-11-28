@@ -17,7 +17,7 @@
                         <!--                  <Image url="@/Image/PlantPal (1).png" />-->
                     </image>
                 </ImageView>
-                <Button fx:id="logo" layoutX="32.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#logoBtn" prefHeight="165.0" prefWidth="193.0" style="-fx-background-color: #7ca76f;">
+                <Button fx:id="logo" layoutX="32.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#logoBtn" prefHeight="165.0" prefWidth="193.0" styleClass="myGarden" stylesheets="@style.css">
                     <graphic>
                         <ImageView fitHeight="170.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                             <image>
@@ -27,7 +27,7 @@
                     </graphic></Button>
                 <HBox alignment="CENTER" layoutY="215.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="182.0" style="-fx-background-color: #7CA76F;" text="MY GARDEN" underline="true">
+                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="182.0" styleClass="myGarden" stylesheets="@style.css" text="MY GARDEN" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -36,7 +36,7 @@
                 </HBox>
                 <HBox alignment="CENTER" layoutY="290.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button fx:id="sellplant" mnemonicParsing="false" onMouseClicked="#sellplantBtn" style="-fx-background-color: #7CA76F;" text="SELL PLANT" underline="true">
+                        <Button fx:id="sellplant" mnemonicParsing="false" onMouseClicked="#sellplantBtn" styleClass="myGarden" stylesheets="@style.css" text="SELL PLANT" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -45,7 +45,7 @@
                 </HBox>
                 <HBox alignment="CENTER" layoutY="435.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" style="-fx-background-color: #7CA76F;" text="DISEASES" underline="true">
+                        <Button fx:id="disease" mnemonicParsing="false" onMouseClicked="#diseaseBtn" styleClass="myGarden" stylesheets="@style.css" text="DISEASES" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -54,7 +54,7 @@
                 </HBox>
                 <HBox alignment="CENTER" layoutY="505.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" style="-fx-background-color: #7CA76F;" text="FERTILIZERS" underline="true">
+                        <Button fx:id="fertilizer" mnemonicParsing="false" onMouseClicked="#fertilizerBtn" styleClass="myGarden" stylesheets="@style.css" text="FERTILIZERS" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
@@ -63,14 +63,14 @@
                 </HBox>
                 <HBox alignment="CENTER" layoutY="365.0" prefHeight="58.0" prefWidth="258.0">
                     <children>
-                        <Button fx:id="buyplant" mnemonicParsing="false" onMouseClicked="#buyplantBtn" style="-fx-background-color: #7CA76F;" text="BUY PLANT" underline="true">
+                        <Button fx:id="buyplant" mnemonicParsing="false" onMouseClicked="#buyplantBtn" styleClass="myGarden" stylesheets="@style.css" text="BUY PLANT" underline="true">
                             <font>
                                 <Font size="20.0" />
                             </font>
                         </Button>
                     </children>
                 </HBox>
-                <Button fx:id="about" layoutX="78.0" layoutY="727.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" style="-fx-background-color: #7CA76F;" text="ABOUT US" underline="true">
+                <Button fx:id="about" layoutX="78.0" layoutY="727.0" mnemonicParsing="false" onMouseClicked="#aboutBtn" styleClass="myGarden" stylesheets="@style.css" text="ABOUT US" underline="true">
                     <font>
                         <Font size="17.0" />
                     </font>
@@ -79,7 +79,7 @@
         </AnchorPane>
         <AnchorPane layoutX="259.0" prefHeight="790.0" prefWidth="1282.0" style="-fx-background-color: #f8f7f2; -fx-background-radius: 25;">
             <children>
-                <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" style="-fx-background-color: #f8f7f2;" text="LOG OUT" textFill="#563030" underline="true">
+                <Button fx:id="logout" layoutX="1190.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" styleClass="logout" stylesheets="@style.css" text="LOG OUT" textFill="#563030" underline="true">
                     <font>
                         <Font size="14.0" />
                     </font>
@@ -99,12 +99,12 @@
                   <Image url="@../../../Image/rightbubble.png" />
                </image>
             </ImageView>
-            <Button layoutX="1132.0" layoutY="249.0" mnemonicParsing="false" onAction="#searchImages" style="-fx-background-color: #f8f7f2;" text="Show Garden" textFill="#2a611c" underline="true">
+            <Button layoutX="1132.0" layoutY="249.0" mnemonicParsing="false" onAction="#searchImages" style="-fx-background-color: #f8f7f2;" styleClass="upshow" stylesheets="@style.css" text="Show Garden" textFill="#2a611c" underline="true">
                <font>
                   <Font name="Comic Sans MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="908.0" layoutY="249.0" mnemonicParsing="false" onAction="#openFileChooser" style="-fx-background-color: #f8f7f2;" text="Upload Plant" textFill="#2a611c" underline="true">
+            <Button layoutX="908.0" layoutY="249.0" mnemonicParsing="false" onAction="#openFileChooser" style="-fx-background-color: #f8f7f2;" styleClass="upshow" stylesheets="@style.css" text="Upload Plant" textFill="#2a611c" underline="true">
                <font>
                   <Font name="Comic Sans MS Bold" size="15.0" />
                </font>

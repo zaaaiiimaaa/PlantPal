@@ -1,0 +1,44 @@
+.myGarden {
+    -fx-background-color: #7ca76f;
+
+}
+
+.myGarden:hover {
+    -fx-background-color: #98BF64;
+
+}
+.logout {
+    -fx-background-color:  #f8f7f2;
+
+}
+
+.logout:hover {
+    -fx-background-color:  #fff4bf;
+
+}
+.upshow  {
+    -fx-border-color:  #f8f7f2;
+}
+.upshow:hover {
+    -fx-border-color:  #7ca76f;
+}
+
+.search {
+  -fx-background-color:  #795c32;
+}
+.search:hover {
+ -fx-background-color: #945c32;
+}
+.sendotp {
+    -fx-background-color:   #b67f56;
+}
+.sendotp:hover{
+    -fx-background-color: #9a7b4f;
+}
+
+.forpass{
+    -fx-border-color: #fff4eb;
+}
+.forpass: hover{
+    -fx-border-color: #865e43
+}

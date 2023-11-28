@@ -32,6 +32,7 @@ public class fertilizerController {
         Stage stage = (Stage) logo.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -39,6 +40,7 @@ public class fertilizerController {
         Stage stage = (Stage) sellplant.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sellplant.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -46,7 +48,9 @@ public class fertilizerController {
         Stage newstage = new Stage();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fert1.fxml"));
         Parent root = fxmlLoader.load();
+
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         newstage.setScene(scene);
         newstage.setResizable(false);
         newstage.show();
@@ -57,6 +61,7 @@ public class fertilizerController {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fert2.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         newstage.setScene(scene);
         newstage.setResizable(false);
         newstage.show();
@@ -67,6 +72,7 @@ public class fertilizerController {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fert3.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         newstage.setScene(scene);
         newstage.setResizable(false);
         newstage.show();
@@ -77,6 +83,7 @@ public class fertilizerController {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fert4.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         newstage.setScene(scene);
         newstage.setResizable(false);
         newstage.show();
@@ -86,6 +93,7 @@ public class fertilizerController {
         Stage stage = (Stage) logout.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -93,6 +101,7 @@ public class fertilizerController {
         Stage stage = (Stage) disease.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("diseases.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -100,6 +109,7 @@ public class fertilizerController {
         Stage stage = (Stage) buyplant.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("buyplant.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -107,6 +117,7 @@ public class fertilizerController {
         Stage stage = (Stage) myGarden.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("mygardeneragerpage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -114,6 +125,7 @@ public class fertilizerController {
         Stage stage = (Stage) about.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("aboutus.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
 }

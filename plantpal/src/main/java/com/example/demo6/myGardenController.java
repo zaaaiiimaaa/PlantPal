@@ -47,6 +47,7 @@ public class myGardenController {
         Stage stage = (Stage) logo.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
 
@@ -55,6 +56,7 @@ public class myGardenController {
         Stage stage = (Stage) logout.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -62,6 +64,7 @@ public class myGardenController {
         Stage stage = (Stage) sellplant.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("sellplant.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -69,6 +72,7 @@ public class myGardenController {
         Stage stage = (Stage) buyplant.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("buyplant.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -76,6 +80,7 @@ public class myGardenController {
         Stage stage = (Stage) fertilizer.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fertilizer.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -83,6 +88,7 @@ public class myGardenController {
         Stage stage = (Stage) about.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("aboutus.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
     @FXML
@@ -90,6 +96,7 @@ public class myGardenController {
         Stage stage = (Stage) disease.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("diseases.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         stage.setScene(scene);
     }
 
@@ -120,7 +127,7 @@ public class myGardenController {
             String imageFileName = username + "_image_" + uniqueIdentifier + getFileExtension(selectedFile.getName());
 
             // Define the directory path where the images are stored
-            String imageDirectoryPath = "C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\User_Garden\\";
+            String imageDirectoryPath = "C:\\GitHub\\PlantPal\\plantpal\\src\\User_Garden\\";
 
             // Combine the directory path and filename to get the full path of the destination file
             String destinationPath = imageDirectoryPath + imageFileName;
@@ -162,7 +169,7 @@ public class myGardenController {
     private HBox imageContainer;
     @FXML
     private ScrollPane myScrollPane;
-    private final String imageFolderPath = "C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\User_Garden\\";
+    private final String imageFolderPath = "C:\\GitHub\\PlantPal\\plantpal\\src\\User_Garden\\";
     public void searchImages() {
         //String searchCriteria = searchField.getText().toLowerCase();  // Convert to lowercase for case-insensitive search
         String searchCriteria=username.toLowerCase();
