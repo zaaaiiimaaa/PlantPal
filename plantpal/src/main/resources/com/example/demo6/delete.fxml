@@ -22,4 +22,9 @@
    
            <Button fx:id="confirmButton" onMouseClicked="#handleConfirm" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #b67f56;" text="Confirm" textFill="WHITE" />
     </VBox>
+   <Label layoutX="84.0" layoutY="27.0" text="ARE YOU SURE YOU WANT TO DELETE THIS POST?">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
 </AnchorPane>

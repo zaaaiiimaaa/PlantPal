@@ -54,7 +54,7 @@ public class editprofileController {
 
     public void loadUserData() {
         // Load data from AllUsers.txt and populate the fields
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/AllUsers.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
@@ -85,7 +85,7 @@ public class editprofileController {
         List<String> updatedUsers = new ArrayList<>();
         boolean passwordMatch = false;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/AllUsers.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
@@ -107,7 +107,7 @@ public class editprofileController {
         }
 
         if (passwordMatch) {
-            try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/AllUsers.txt"))) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt"))) {
                 for (String userLine : updatedUsers) {
                     writer.write(userLine);
                     writer.newLine();

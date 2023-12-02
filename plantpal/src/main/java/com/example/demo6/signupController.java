@@ -98,7 +98,7 @@ public class signupController {
             // Optionally, handle the exception in the UI
         }
 
-        try(BufferedWriter writer=new BufferedWriter(new FileWriter("src/AllUsers.txt",true)))
+        try(BufferedWriter writer=new BufferedWriter(new FileWriter("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt",true)))
         {
             String userdata=Full + "," + email +","+ user +","+number+","+pass+","+repeat;
             writer.write(userdata);
@@ -131,7 +131,7 @@ public class signupController {
     }
 
     private boolean isUsernameTaken(String username) throws IOException {
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/AllUsers.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\User\\Documents\\GitHub\\PlantPal\\plantpal\\src\\AllUsers.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
